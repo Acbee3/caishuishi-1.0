@@ -1,0 +1,584 @@
+@charset"utf-8";
+/*----------此CSS用到的页面是所有凭证--*/
+/*---.showTitle---*/
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.tl {
+    text-align: left;
+}
+
+.showTitle{
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 160px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #fff;
+    z-index: 9;
+    padding-bottom: 10px;
+}
+.showTitle li{
+    font-size: 12px;
+    padding: 0 6px;
+    line-height: 24px;
+    text-align:left;
+}
+.showTitle li:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+.showTitle li.on {
+    background: #eee;
+}
+/*----.newAdd---*/
+.newAdd{
+    position: absolute;
+    left: 0;
+    top: 220px;
+    height: 32px;
+    line-height: 32px;
+    width: 100%;
+    padding: 0 13px;
+    background: #f5f5f5;
+    color: #ecac33;
+    font-size: 14px;
+}
+.newAdd:hover{
+    background: #dadada;
+}
+.newAdd span{
+    cursor: pointer;
+}
+.newAdd i{
+    cursor: pointer;
+}
+/*--.getAdd---*/
+.getAdd{
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    text-indent: 14px;
+}
+.getAdd .nums{
+    text-indent: 8px;
+    font-size: 12px;
+    color: blue;
+}
+.getAdd .text{
+    font-size: 12px;
+    color: #4E5465;
+}
+/*---.el-date-picker--*/
+.el-date-picker{
+    width: 256px
+}
+/*----.recoardWrapper---*/
+.recoardWrapper{
+    width: 1076px;
+    margin: 50px 0 0 70px;
+}
+.recoardWrapper .recoardContain{
+    position:relative;
+    width: 1076px;
+    box-shadow: 0 0 3px 3px #ccc;
+    padding: 11px 31px 40px 30px;
+}
+.recoardWrapper .recoardContain .recoardMenu{
+    padding-left: 28px;
+}
+.recoardContain .recoardMenu .recoardHead{
+    text-align: center;
+    padding: 16px 0;
+}
+.recoardContain .recoardMenu .recoardHead h2{
+    display: inline-block;
+    font-size: 28px;
+    color: #333333;
+    height: 38px;
+    border-bottom: 4px double #333;
+}
+/*----.recoardBar-=--*/
+.recoardContain .recoardMenu .recoardBar {
+    position: relative;
+    font-size: 14px;
+}
+.recoardContain .recoardMenu .recoardBar:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.recoardContain .recoardMenu .recoardBar .barMark{
+    float: left;
+}
+.recoardMenu .recoardBar .barMark span.text{
+    vertical-align: top;
+    display: inline-block;
+    line-height: 30px;
+}
+.recoardBar .barMark>input{
+    width:60px;
+    height:30px;
+}
+/*----.barDate---*/
+.recoardMenu .recoardBar .barDate{
+    float: left;
+    line-height: 30px;
+    margin-left: 30px;
+}
+.barDate .dateInvoice{
+    display:inline-block;
+    vertical-align:top;
+    border:1px solid #ccc;
+    position:relative;
+    width:168px;
+}
+.barDate .dateInvoice>input{
+    border:none;
+    width:140px;
+    height:30px;
+}
+.barDate .dateInvoice .iconfont{
+    cursor:pointer;
+    color:#f97d3c;
+    position:absolute;
+    right:4px;
+    top:0;
+}
+/*---.barYear----*/
+.recoardMenu .recoardBar .barYear{
+    float: left;
+    line-height: 30px;
+    margin-left: 120px;
+}
+.recoardMenu .recoardBar .barZ{
+    float: right;
+    line-height: 30px;
+}
+.recoardMenu .recoardBar .barZin{
+    width: 30px;
+    height: 26px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+/*-----.recoardTable------*/
+.recoardTable{
+    width: 100%;
+    margin-top: 50px;
+}
+.recoardTable table{
+    width: 100%;
+    table-layout: fixed;
+}
+.recoardTable table .recoardTable-head{
+    height: 50px;
+}
+.recoardTable table .recoardTable-head th{
+    font-size: 18px;
+    font-weight: lighter;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:#333;
+}
+.recoardTable .recoardTable-head th span{
+    font-size: 12px;
+}
+.recoardTable .recoardTable-head .moneySend{
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+}
+.recoardTable .recoardTable-head .borderTop{
+    border-top: 1px solid #ccc;
+    background: url(../../../images/book/money.png);
+    font-size: 0;
+    height: 25px;
+    line-height: 25px;
+}
+.recoardTable .recoardTable-head .borderTop span{
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    float: left;
+}
+/*---.recoardBody----*/
+.recoardTable .recoardBody tr,.recoardTable tfoot tr{
+    height: 60px;
+}
+.recoardTable .recoardBody tr td{
+    position: relative;
+}
+.recoardTable  tr .total{
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 6px;
+}
+.recoardTable .recoardBody tr .colSend{
+    background: url(../../../images/book/money.png);
+}
+.recoardTable .recoardBody tr .colVal{
+    font-size: 14px;
+    padding-left: 10px;
+    display: block;
+}
+.recoardTable .recoardBody tr .bigWord{
+    letter-spacing: 11px;
+    text-align: right;
+
+}
+.recoardTable .recoardBody tr .hiddenInput{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    font-weight: 800;
+    text-indent: 14px;
+    color: #4E5465;
+}
+.recoardTable .recoardBody tr .showText{
+    position: absolute;
+    width: 260px;
+    height: 63px;
+    line-height: 63px;
+    letter-spacing: 12px;
+    text-align: right;
+    left: 0;
+    top: 0;
+}
+.recoardTable .recoardBody tr .active{
+    color:#f97d3c;
+}
+.recoardTable tfoot td.fs{
+    color:#f97d3c;
+}
+.recoardTable .recoardBody tr .celInput{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    background: rgba(255,255,255,0.1);
+    font-size: 14px;
+    text-indent: 4px;
+    border:none;
+}
+.recoardTable .recoardBody tr .celInput:focus{
+    outline: none;
+    background: #fff;
+}
+/*-----.recoardFooter----*/
+.recoardFooter{
+    font-size: 0;
+    margin-top: 30px;
+    padding:0 30px;
+}
+.recoardFooter>div{
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right:10px;
+}
+.recoardFooter>div i{
+    font-style: normal;
+}
+.recoardFooter>div i.auth{
+    width: 166px;
+}
+.recoardFooter>div i.makeDate{
+    width: 290px
+}
+.recoardTable table td,.recoardTable table th{
+    border-width:0 1px 1px 0;
+    border-style:solid;
+    border-color:#333;
+}
+.recoardTable table .border-top{
+    border-top:1px solid #333;
+}
+.recoardTable table .border-bottom{
+    border:none;
+}
+.recoardTable table .border-Leftbottom{
+    border-bottom:none;
+}
+/*--addline---*/
+.addLine{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.addLine a{
+    font-size: 16px;
+    display: block;
+    height: 16px;
+    padding-top:9px;
+    color: #f97d3c;
+}
+.addLine .addScore{
+    margin-bottom:10px;
+}
+.oparate{
+    display:none;
+}
+/*---deleLine----*/
+.deleLine{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+.deleLine .iconD{
+    font-size: 16px;
+    color: #ed6d6d;
+    height: 16px;
+}
+.recoardBody tr:hover .oparate{
+    display:block;
+}
+/*----.footer----*/
+.footer{
+    margin: 30px 0;
+    font-size: 0;
+    text-align: right;
+}
+.footer a{
+    display:inline-block;
+    font-size: 14px;
+    height:30px;
+    line-height:30px;
+    padding: 0 10px;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+.footer a.keepAdd{
+    color: #fff;
+    background: #24b482;
+}
+.footer .recoardItem{
+    color: #fff;
+    background: #f97d3c;
+}
+.footer .keepsItem{
+    color: #fff;
+    background: #f97d3c;
+    border-radius:4px;
+}
+.recoardWrapper .footer .recoardDel{
+    color: #ff5757;
+    border:1px solid #ffa5a5;
+}
+/*----删除后的弹窗-----*/
+.delAleart .delMenu{
+    padding:15px;
+}
+.delAleart .delMenu p{
+    line-height:30px;
+    font-size:14px;
+}
+.delAleart .layui-layer-btn1{
+    color:#fff;
+    background:#f66;
+    border:none;
+}
+/*-------当审核成功时的图片-----*/
+#shImg{
+    position:absolute;
+    z-index: 500;
+    background-image: url(/images/book/shenhe.png);
+    width: 227px;
+    height: 129px;
+    right: 186px;
+    top: 12px;
+}
+/*--------------小键盘-------------*/
+.keyWrapper{
+    margin-bottom:20px;
+    position:relative;
+}
+.keyWrapper .keyIcon{
+    font-size:30px;
+    color:#f97d3c;
+    cursor: pointer;
+    padding:6px 0;
+}
+.keyContent{
+    border:1px solid #cfcfcf;
+    padding:0 15px 20px;
+    width:370px;
+    position:absolute;
+    left:0;
+    top:33px;
+    background:#fff;
+    z-index:99;
+}
+.keyContent h3{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom:20px;
+}
+.keyTable thead tr th{
+    font-size:14px;
+    color:#3d3d3d;
+    font-weight:bold;
+    border:1px solid #cfcfcf;
+}
+.keyTable tr{
+    height:30px;
+    line-height:30px;
+}
+.keyTable tr td{
+    border:1px solid #cfcfcf;
+}
+
+.layui-layer-title {
+    background-color: #f97d3c!important;
+    color: #fff!important;
+    border-radius: 4px!important;
+}
+
+.layui-layer {
+    border-radius: 4px!important;
+}
+
+.layui-layer-btn a {
+    border-radius: 4px!important;
+    margin: 5px 10px 0!important;
+}
+
+.layui-layer-dialog {
+    border-radius: 4px!important;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+    background-color: #f97d3c!important;
+    border: none;
+}
+
+.layui-layer-btn .layui-layer-btn1 {
+    border: 1px solid #ffa5a5;
+    color: #ff5757;
+    background-color: #fff;
+}
+
+.layui-layer-setwin .layui-layer-close1 {
+    background-position: -87px -39px!important;
+}
+
+.xinzengkemu {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: -189px;
+    left: 0;
+    border: 1px solid #c6c6c6;
+    border-top: none;
+    cursor: pointer;
+    text-align: left;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.xinzengkemu .iconfont {
+    color: #f97d3c;
+}
+
+.components .content {
+    padding: 15px 10px 0 24px;
+}
+
+.components .content .inputKm {
+    margin: 40px 0;
+}
+
+.components .content .inputKm label {
+    height: 30px;
+    line-height: 30px;
+    margin-right: 14px;
+}
+
+.components .content .inputKm .rzkm {
+    height: 30px;
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+    width: 273px;
+    position: relative;
+}
+
+.components .content .inputKm .rzkm .iconfont {
+    font-size: 12px;
+    color: #cecece;
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.components .content input {
+    border: 0;
+    padding: 0;
+    border-radius: 4px;
+    height: 28px;
+    width: 244px;
+    padding-left: 10px;
+}
+
+.components .content .newKmName {
+    border: 1px solid #c6c6c6;
+    width: 273px;
+    height: 30px;
+}
+
+.components .content ul {
+    height: 100px;
+    width: 273px;
+    position: absolute;
+    z-index: 10;
+    top: 28px;
+    left: -1px;
+    border: 1px solid #c6c6c6;
+    overflow: auto;
+    background-color: #fff;
+}
+
+.components .content ul li {
+    padding: 0 5px;
+    line-height: 22px;
+    font-size: 12px;
+    /*background-color: #fff;*/
+    cursor: pointer;
+    text-align: left;
+}
+
+.components .content ul li:hover {
+    background-color: #eee;
+}
+
+.components .content ul li.active {
+    color: #f97d3c;
+    background-color: #fff;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    zoom: 1;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="search">
+    <div class="selectFilter">
+        <div class="selectHead" @click="codeList = !codeList">
+            <span class="titleTop">{{getDate}}</span>
+            <i class="icon iconfont icon--xialajiantou"></i>
+        </div>
+        <ul class="showTitle" v-show="codeList">
+            <li v-for="item in options" :key="item.index" @click="getNewAdds(item.label)">
+                {{item.label}}
+            </li>
+        </ul>
+    </div>
+    <div class="searchContainer">
+        <input type="text" placeholder="请输入企业编码或名称">
+        <i class="icon iconfont icon-search"></i>
+    </div>
+</div>
+</body>
+</html>

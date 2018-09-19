@@ -1,0 +1,81 @@
+@charset "utf-8";
+/*--------headerTop----------*/
+.headerTop{
+    width: 100%;
+    min-width: 1200px;
+    height: 70px;
+    padding: 0 46px;
+}
+.headerTop .headerLeft{
+    float: left;
+    height:70px;
+}
+.headerTop .headerLeft img{
+    width: 134px;
+    margin-top: 8px;
+}
+.headerTop .headerRight{
+    float: right;
+    font-size: 0;
+    height:70px;
+}
+.headerTop .headerRight .header-item{
+    display: inline-block;
+    font-size: 12px;
+    color: #333;
+    height: 70px;
+    line-height:70px;
+    margin-left: 28px;
+}
+.headerTop .headerRight .header-item img{
+    margin-top:25px;
+}
+.headerTop .headerRight .header-item span{
+  vertical-align: top;
+    margin-left: 4px;
+}
+/*-----tab----------*/
+.tab{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #12203d;
+    padding: 0 46px;
+}
+.tab .tabList{
+    font-size: 0;
+}
+.tab .tabList>li{
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 16px;
+    line-height: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    vertical-align: top;
+}
+.tab .tabList>li a{
+    color:#fff;
+}
+.tab .tabList li:hover{
+    background: #203054;
+}
+.activeBg{
+    background: #203054;
+}
+.tab .tabList li .showList{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 88px;
+    background:#203054;
+    z-index: 4;
+}
+.tab .tabList .showList li{
+    text-align: center;
+}
+.tab .tabList .showList li:hover{
+    background: #26456f;
+}

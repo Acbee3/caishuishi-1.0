@@ -1,0 +1,121 @@
+@charset "utf-8";
+.search{
+    height: 24px;
+}
+.editorMenu{
+    display:inline-block;
+    height:30px;
+}
+.search .selectFilter,.editorMenu .yearSearch{
+    float:left;
+    position:relative;
+}
+.yearSearch{
+    margin-right:10px;
+}
+/*-----不同的宽度---与高度----*/
+.search .selectFilter{
+    width: 200px;
+}
+.selectHead{
+    width:204px;
+    height: 30px;
+    line-height:30px;
+}
+.editorDate .yearSearch,.selectWrapper,.showData{
+    width:120px;
+}
+.selectWrapper{
+    width:120px;
+    height:30px;
+    line-height:30px;
+}
+.showTitle{
+    top:30px;
+    width:204px;
+}
+.showData{
+    top:30px;
+}
+/*----会计制度-----*/
+.accountSearch{
+    width:300px;
+    display:inline-block;
+    height:30px;
+    margin-left:10px;
+}
+.accountWrapper{
+    width:300px;
+    height:30px;
+    line-height:30px;
+}
+.showAccount{
+    width:300px;
+}
+/*-----*/
+.selectHead,.selectWrapper,.accountWrapper{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    text-indent: 10px;
+    color:#3d3d3d;
+    position:relative;
+}
+.selectHead .downTip,.selectWrapper .downTip,.accountWrapper .downTip{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    cursor:pointer;
+    font-size:14px;
+}
+.showTitle,.showData,.showAccount{
+    font-size: 11px;
+    border:1px solid #999;
+    border-radius: 4px;
+    border-top: none;
+    padding-bottom:10px;
+    position:absolute;
+    left:0;
+    background:#fff;
+    z-index: 9;
+}
+.showTitle li,.showData li,.showAccount li{
+    line-height:30px;
+    text-indent: 10px;
+}
+.showTitle li:hover,.showData li:hover,.showAccount li:hover{
+    background:#eee;
+    cursor:pointer;
+}
+.searchContainer{
+    position:relative;
+    width:300px;
+    height:30px;
+    line-height:30px;
+    border: 1px solid #f97d3c;
+    border-radius:4px;
+    float:left;
+    margin-left:20px;
+}
+#icon-search{
+    position:absolute;
+    top:0;
+    right:0;
+    display:inline-block;
+    width:70px;
+    height:28px;
+    text-align: center;
+    line-height:28px;
+    background:#f97d3c;
+    color:#fff;
+    cursor: pointer;
+}
+.searchContainer input{
+    font-size:12px;
+    width:270px;
+    text-indent: 8px;
+    border: none;
+}
+.searchContainer .icon-search{
+    cursor:pointer;
+}

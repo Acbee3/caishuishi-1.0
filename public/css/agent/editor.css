@@ -1,0 +1,190 @@
+@charset "utf-8";
+/*---*----*/
+.required:before{
+    content: '*';
+    font-size:12px;
+    color:red;
+    width:20px;
+    text-align:center;
+}
+/*----editor----列表*/
+.editorContainter{
+    padding:20px;
+}
+.customerEditor{
+    margin:10px;
+    border: 1px solid #ccc;
+    min-width:980px;
+}
+.editorList{
+    font-size: 0;
+    height:40px;
+    line-height:40px;
+    padding-left:20px;
+}
+.editorList>li{
+    display:inline-block;
+    padding:0 8px;
+    margin-right:10px;
+    font-size:14px;
+    color:#333;
+}
+.editorList>li.activeEditor{
+    color: #f97d3c;
+    border-bottom:2px solid #f97d3c;
+}
+/*----bascInfo---form-*/
+.editorLine{
+    font-size: 0;
+    margin-bottom:20px;
+}
+.editorLine .editorLineLeft,.editorLine .editorLineRight{
+    display:inline-block;
+    font-size:14px;
+    color:#333;
+    vertical-align:top;
+}
+.editorLine .editorLineRight{
+    margin-left:30px;
+}
+.editorLine label{
+    display:inline-block;
+    width:134px;
+    height:30px;
+    line-height:30px;
+    text-align:right;
+    vertical-align: top;
+}
+.editorLine input{
+    width:300px;
+    height:30px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    text-indent:10px;
+    margin-left:10px;
+}
+.editorLine .local{
+    display:inline-block;
+    vertical-align:top;
+    width:400px;
+    height:30px;
+    margin-left:10px;
+}
+.editorLine .editorLineLeft .operate{
+    vertical-align:top;
+    height:52px;
+    line-height:52px;
+}
+.editorLine #textA{
+    width:778px;
+    margin-left:10px;
+}
+.editorLine .editorLineRight .editorDate{
+    display:inline-block;
+    width:300px;
+    border: 1px solid #ccc;
+    border-radius:4px;
+    position:relative;
+    margin-left:10px;
+}
+.editorLine .editorLineRight .editorDate .date{
+    width:260px;
+    margin-left:0;
+    border:none;
+}
+.editorLine .editorLineRight .editorDate #testdateIcon{
+    position:absolute;
+    right:0;
+    top:0;
+    border-left:1px solid #ccc;
+    display:inline-block;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    text-align: center;
+    color:darkred;
+    font-size:20px;
+    cursor:pointer;
+}
+/*-------accountInfo-----账套信息*/
+.accountForm .basicNum{
+    font-size:14px;
+    color:#568bfb;
+    width:100%;
+    padding-bottom:8px;
+    border-bottom:1px dashed #ccc;
+    margin-bottom:10px;
+}
+/*----editor---按钮-----*/
+.bascBtn{
+    padding-left:160px;
+}
+.bascBtn>a{
+    display:inline-block;
+    padding:6px 15px;
+    color:#fff;
+    font-size:14px;
+    border-radius:4px;
+}
+.bascBtn .editorBlack{
+    background:#dd7471;
+    margin-right:10px;
+}
+.bascBtn .editorKeep{
+    background:#f97d3c;
+}
+/*------科目层级------------*/
+.editorOther{
+    display:flex;
+}
+.editorOther label{
+    font-size:14px;
+    width:134px;
+}
+.editorOther .editorOtherAdd{
+    flex:1;
+    margin-left:4px;
+}
+.editorLine .topClass{
+    width:300px;
+    height:30px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    margin-left:10px;
+}
+.editorLine .subjectLength{
+    width:120px;
+    height:30px;
+    border-radius:4px;
+    margin-left:10px;
+    vertical-align: top;
+    margin-bottom:10px;
+    font-size:14px;
+}
+#subjectAdd{
+    display:inline-block;
+    border:1px solid #ccc;
+    height:30px;
+}
+/*----账套信息保存按钮---------*/
+.accountInfoBtn{
+    padding-left:160px;
+}
+.accountInfoBtn a{
+    display:inline-block;
+    padding:6px 14px;
+    background:#568bfb;
+    border-radius:4px;
+    color:#fff;
+}
+/*------会计制度提示------*/
+.accountTip{
+    position:relative;
+}
+.accountTipConenter{
+    position:absolute;
+    left:0;
+    top:32px;
+    color:#ec7638;
+    font-size:14px;
+}

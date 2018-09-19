@@ -1,0 +1,230 @@
+@charset"utf-8";
+/*---------此css用到的页面是--会计科目---*/
+.account{
+    /*border:1px solid #ccc;*/
+    padding:12px 20px 12px 20px;
+}
+.accountSearch{
+    width:210px;
+    height:30px;
+    border: 1px solid #f97d3c;
+    border-radius:4px;
+    position:relative;
+    padding-left:2px;
+}
+.accountSearch input{
+    width:146px;
+    height:26px;
+    font-size:14px;
+    border:none;
+    text-indent:8px;
+}
+.accountSearch .icon-search{
+    position:absolute;
+    display:inline-block;
+    width:30px;
+    height:36px;
+    line-height:36px;
+    cursor:pointer;
+    right:0;
+    top:0;
+    font-size:26px;
+    color:#333;
+}
+.accountSearch .searchBtn{
+    position:absolute;
+    top:0;
+    right:0;
+    display:inline-block;
+    width:64px;
+    height:28px;
+    line-height:28px;
+    text-align: center;
+    background:#f97d3c;
+    color:#fff;
+    font-size:14px;
+    border-radius:0 2px 2px 0;
+    cursor:pointer;
+}
+.accountSearch input::-moz-placeholder{
+    color:#333;
+    font-size:12px;
+}
+.accountSearch input::-webkit-input-placeholder{
+    color:#333;
+    font-size:12px;
+}
+.accountSearch input:-ms-input-placeholder{
+    color:#333;
+    font-size:12px;
+}
+/*----table-----*/
+#accountTable{
+    margin-top:14px;
+  /*  height:600px;
+    overflow:auto;*/
+}
+
+.accountTable tr th {
+    border-width: 0 1px 1px 1px;
+    border-style: dotted;
+    border-color: #adadad;
+}
+.tableScroll tbody tr td{
+    border-width: 0 1px 1px 1px;
+    border-style: dotted;
+    border-color: #ccc;
+}
+#accountTable thead tr{
+    height:48px;
+    line-height:48px;
+    background:#cfcfcf;
+}
+#accountTable tbody tr{
+    height:40px;
+    line-height:40px;
+    font-size:14px;
+}
+
+#accountTable .dataIndex {
+    display: inline-block;
+    width: 20px;
+    height: 48px;
+    position: relative;
+}
+
+#accountTable .anchorList {
+    display: none;
+    position: absolute;
+    top: 31px;
+    left: 12px;
+    width: 60px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+#accountTable .anchorList li {
+    line-height: 30px;
+    text-align: center;
+    border-top: 1px solid #aaa;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#accountTable .anchorList li a {
+    display: block;
+    width: 58px;
+    height: 30px;
+}
+
+#accountTable .anchorList li:hover {
+    background-color: #ccc;
+}
+
+#accountTable .anchorList li:first-child {
+    border: 0;
+}
+.borderBlure{
+    border: none;
+    background-color: inherit;
+    display:inline-block;
+    font-size:20px;
+    cursor:pointer;
+}
+#tableScroll .icon-xinzeng{
+    color:#49b18d;
+}
+#tableScroll .icon-bianji{
+    color:#49b18d;
+}
+#tableScroll .icon-shanchu{
+    color:#ff5757;
+}
+.borderBlure:hover{
+    color:#568bfb;
+    background-color: inherit;
+}
+.del{
+    color:#ed6d6d;
+}
+.del:hover{
+    color:#ed6d6d;
+}
+.orangeBtn{
+    background:#ec7638;
+    display:inline-block;
+    height:26px;
+    color:#fff;
+    padding:0 8px;
+    border-radius:3px;
+    line-height:26px;
+}
+.orangeBtn:hover{
+    color:#fff;
+}
+.btnBackground{
+    background:red;
+}
+/*--------addDialog-------*/
+.addDialog{
+    width:700px;
+    height:500px;
+}
+#tableScroll tbody td:nth-child(1),#tableScroll tbody td:nth-child(2){
+    text-align:left;
+    padding-left:6px;
+}
+/*----编辑新增时的弹窗-----*/
+.subjectNewAdd .layui-layer-title{
+    padding:0 20px 0 22px;
+    background:#f97d3c;
+    color:#fff;
+    font-weight:bold;
+    font-size:14px;
+}
+.subject_item{
+    padding:0 20px;
+    margin-top:14px;
+}
+.subject_item label{
+    display:inline-block;
+    width:90px;
+    height:30px;
+    line-height:30px;
+    text-align: right;
+    margin-right:10px;
+}
+.menu input{
+    width:150px;
+    height:26px;
+    text-indent: 5px;
+    border-radius:4px;
+    border:1px solid #ccc;
+}
+.wrapper input{
+    margin:0 5px;
+}
+.subjectNewAdd .layui-layer-btn .layui-layer-btn0{
+    margin:5px 20px 0;
+    padding:0 10px;
+    background:#f97d3c;
+    border-color:#f97d3c;
+    border-radius:4px;
+}
+.subjectNewAdd .layui-layer-btn .layui-layer-btn1{
+    margin:5px 0 0;
+    padding:0 10px;
+    border-color:#ffa5a5;
+    color:#ff5757;
+    border-radius:4px;
+}
+.subjectNewAdd .layui-layer-setwin .layui-layer-close1{
+    background-position: -87px -39px;
+}
+.fs0{
+    font-size: 0;
+}
+.fs0>a{
+    margin-right: 15px;
+}

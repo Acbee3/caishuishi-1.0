@@ -1,0 +1,111 @@
+@charset "utf-8";
+.customerWrapper{
+    width: 100%;
+    padding: 24px 46px 0 46px;
+}
+.customerWrapper .list:after{
+    display:block;
+    content: '';
+    clear:both;
+}
+.customerWrapper .list li{
+    float:left;
+    margin-right:20px;
+    border: 1px solid #466fc9;
+    color:#466fc9;
+    font-size: 14px;
+    width:120px;
+    height:30px;
+    line-height:30px;
+    border-radius:4px;
+    text-align: center;
+    cursor:pointer;
+}
+.customerWrapper .list .listActive{
+    background: #466fc9;
+    color: #fff;
+}
+/*----customerContainer----*/
+.customerContainer{
+    width: 100%;
+    border: 1px solid #333;
+    margin-top:12px;
+    padding:14px 20px 20px 20px;
+}
+.customerMenu .customerBtn{
+    float:right;
+    font-size: 0;
+}
+.customerMenu .customerBtn li{
+    display:inline-block;
+    font-size:12px;
+    color:#fff;
+    background:#568bfb;
+    padding:6px 10px;
+    margin: 0 4px;
+    border-radius:4px;
+    cursor:pointer;
+    position:relative;
+}
+.customerMenu .customerBtn .customerBatch{
+    position:absolute;
+    left:0;
+    top:30px;
+    background: #f5f6fa;
+    border-radius:4px;
+    color:#333;
+    width:64px;
+	z-index:9;
+}
+.customerMenu .customerBtn .customerBatch dt{
+    height:30px;
+    line-height:30px;
+    text-align: center;
+}
+.customerMenu .customerBtn .customerBatch dt:hover{
+    background: #d5deef;
+}
+/*---table---*/
+.customerTable{
+    width:100%;
+    margin-top:16px;
+}
+.customerTable .custTableText thead{
+    background:#35465a;
+}
+.custTableText thead tr{
+    height:30px;
+    line-height:30px;
+}
+.custTableText thead th{
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+.custTableText tbody tr{
+    height:30px;
+    line-height:30px;
+}
+.custTableText tbody tr td{
+    font-size:12px;
+    color:#333;
+}
+.custTableText tbody td a{
+    display:inline-block;
+    color:#456cc7;
+    padding:0 4px;
+}
+/*--------layuiTable--------*/
+.layui-table, .layui-table-view{
+    margin:0;
+}
+.borderBlure{
+    border: none;
+    background-color: inherit;
+    color:#568bfb;
+}
+.borderBlure:hover{
+    color:#568bfb;
+    background-color: inherit;
+}
+/*---停用----*/

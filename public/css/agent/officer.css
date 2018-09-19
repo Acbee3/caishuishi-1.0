@@ -1,0 +1,160 @@
+@charset "utf-8";
+.officerContainer{
+    width:100%;
+    background:#efefef;
+    position:absolute;
+    left:0;
+    top:110px;
+    bottom:0;
+}
+.officerContainer .officerLeft{
+   width:260px;
+    background:#fff;
+    margin-right:10px;
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    padding:0 4px;
+}
+.officerContainer .officerLeft .text{
+    width:100%;
+    border-bottom:1px solid #eee;
+    height:40px;
+    line-height:40px;
+    color:#ec7638;
+    font-size:14px;
+    margin-bottom: 10px;
+}
+.officerLeft .officeBtn{
+    font-size:0;
+}
+.officerContainer .officerLeft .officeBtn>a{
+    display:inline-block;
+    width:50px;
+    height:26px;
+    line-height:26px;
+    color:#fff;
+    text-align: center;
+    margin: 0 6px;
+    border-radius:4px;
+    font-size:12px;
+}
+.officerLeft .officeBtn .officerNewadd{
+    background: #7a8bc2;
+}
+.officerLeft .officeBtn .officerNewaddDel{
+    background:#ed6d6d;
+}
+.officerContainer .officerRight{
+    width: calc(100% - 270px);
+    background:#fff;
+    position:absolute;
+    right:0;
+    top:0;
+    bottom: 0;
+    padding:0 4px 10px 4px;
+    overflow:auto;
+}
+.officerContainer .officerRight .officerCustomer{
+    width:100%;
+    border-bottom:1px solid #eee;
+    height:40px;
+    line-height:40px;
+    color:#ec7638;
+    font-size:14px;
+    margin-bottom: 10px;
+}
+.officerRight .officerSearch{
+
+}
+.officerRight .officerSearch:after{
+    display:block;
+    content: '';
+    clear:both;
+}
+.officerRight .officerSearch .search{
+    width:230px;
+    height:30px;
+    border:1px solid #333;
+    border-radius:4px;
+    position:relative;
+    padding-left:2px;
+    float:left;
+}
+.officerRight .officerSearch .search input{
+    width:200px;
+    height:26px;
+    border:none;
+}
+.officerRight .officerSearch .search .icon-search{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    cursor:pointer;
+    position:absolute;
+    right:0;
+    top:0;
+    font-size:20px;
+    color:#000;
+}
+.officerRight .officerRightBtn{
+    float:right;
+}
+.officerRight .officerRightBtn a{
+    display:inline-block;
+    width:56px;
+    height:26px;
+    line-height:26px;
+    color:#fff;
+    text-align: center;
+    margin: 0 6px;
+    border-radius:4px;
+    background:#7a8bc2;
+}
+/*-----table----*/
+.officerRight .officerTable{
+   margin-top:10px;
+}
+.officerRight thead tr{
+    background:#35465a;
+    color:#fff;
+    height:40px;
+    line-height:40px;
+
+}
+.officerRight thead tr th{
+    font-weight: 400;
+}
+.officerRight tbody tr{
+    height:40px;
+    line-height:40px;
+}
+.borderBlure{
+    border: none;
+    background-color: inherit;
+    color:#568bfb;
+    display:inline-block;
+    padding:0 8px;
+    font-size:20px;
+    cursor:pointer;
+}
+.borderBlure:hover{
+    color:#568bfb;
+    background-color: inherit;
+}
+.del{
+    color:#ed6d6d;
+}
+.orangeBtn{
+    background:#ec7638;
+    display:inline-block;
+    color:#fff;
+    width:50px;
+    height:26px;
+    line-height:26px;
+    border-radius:4px;
+    font-size:12px;
+}

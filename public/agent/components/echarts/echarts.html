@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <!--<link rel="stylesheet" href="../../common/element-ui/lib/theme-chalk/index.css">-->
+</head>
+<body>
+<div id="app">
+    <div class="chart-container">
+        <div id="chartPie" style="width:100%; height:400px;"></div>
+        <div id="doughnut" style="width:100%; height:400px"></div>
+    </div>
+</div>
+<!--<script src="../../common/js/vue.min.js"></script>-->
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
+<!--echarts-->
+<!--<script src="../../common/echarts/dist/echarts.min.js"></script>-->
+<script src="../../common/js/echarts.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                chartPie: null,
+                chartDoughnut: null
+            }
+        },
+        methods: {
+            drawDoughnutChart() {
+                this.chartDoughnut = echarts.init(document.getElementById('doughnut'))
+                this.chartDoughnut.setOption({
+                    title: {
+                        text: '记账',
+                        subtext: '财税狮',
+                        x: 'left'
+                    },
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: '{a} <br/>{b}: {c} ({d}%)'
+                    },
+                    series: [
+                        {
+                            name: '',
+                            type: 'pie',
+                            radius: ['50%', '70%'],
+                            avoidLabelOverlap: false,
+                            label: {
+                                normal: {
+                                    show: false,
+                                    position: 'center'
+                                },
+                                emphasis: {
+                                    show: true,
+                                    textStyle: {
+                                        fontSize: '30',
+                                        fontWeight: 'bold'
+                                    }
+                                }
+                            },
+                            labelLine: {
+                                normal: {
+                                    show: false
+                                }
+                            },
+                            /*----------此处模拟数据-------从后台获取时置空data: [],------*/
+                            data: [
+                                {
+                                    "value": 6,
+                                    "name": "未开始"
+                                },
+                                {
+                                    "value": 2,
+                                    "name": "已完成"
+                                },
+                                {
+                                    "value": 8,
+                                    "name": "进行中"
+                                }
+                            ]
+                        }
+                    ]
+                })
+                /*--------后台获取数据-----------*/
+               /* this.$http.get('http://localhost:8080/api/charts').then((response) => {
+                    response = response.body
+                    this.chartDoughnut.setOption({
+                        series: [{
+                            name: '记账',
+                            data: response.data.date
+                        }]
+                    })
+                })*/
+            },
+            drawPieChart() {
+                this.chartPie = echarts.init(document.getElementById('chartPie'))
+                this.chartPie.setOption({
+                    title: {
+                        text: '理财',
+                        subtext: '财税狮',
+                        x: 'left'
+                    },
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: '{a} <br/>{b} : {c} ({d}%)'
+                    },
+                    series: [
+                        {
+                            name: '理财',
+                            type: 'pie',
+                            radius: '55%',
+                            center: ['50%', '60%'],
+                            /*----------此处模拟数据-------从后台获取时置空data: [],------*/
+                            data: [
+                                {
+                                    "value": 6,
+                                    "name": "未开始"
+                                },
+                                {
+                                    "value": 2,
+                                    "name": "已完成"
+                                },
+                                {
+                                    "value": 2,
+                                    "name": "进行中"
+                                }
+                            ],
+                            itemStyle: {
+                                emphasis: {
+                                    shadowBlur: 10,
+                                    shadowOffsetX: 0,
+                                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                }
+                            }
+                        }
+                    ]
+                })
+                /*--------后台获取数据-----------*/
+              /*  this.$http.get('http://localhost:8080/api/charts').then((response) => {
+                    response = response.body
+                    this.chartPie.setOption({
+                        series: [{
+                            data: response.data.series
+                        }]
+                    })
+                })*/
+            },
+            drawCharts() {
+                this.drawDoughnutChart()
+                this.drawPieChart()
+            }
+        },
+        mounted: function () {
+            this.drawCharts()
+        },
+        updated: function () {
+            this.drawCharts()
+        }
+    })
+</script>
+</body>
+</html>

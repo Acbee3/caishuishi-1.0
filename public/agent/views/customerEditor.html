@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>客户端编辑</title>
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="../common/fonts/iconfont.css">
+    <link rel="stylesheet" href="../common/layui/css/layui.css">
+    <link rel="stylesheet" href="./css/editor.css">
+    <!--[if lt IE 9]>
+    <script src="../common/js/html5shiv.min.js"></script>
+    <script src="../common/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="customerEditor">
+    <ul class="editorList">
+        <li class="activeEditor">基本信息</li>
+        <li>账套信息</li>
+    </ul>
+    <div class="editorContainter">
+        <div class="bascInfo">
+            <form>
+                <div class="editorLine">
+                <div class="editorLineLeft">
+                    <label class="required">企业名称：</label>
+                    <input type="text" value="苏州财税狮网络科技有限公司">
+                </div>
+                <div class="editorLineRight">
+                    <label class="required">纳税人识别号：</label>
+                    <input type="text" value="91320594MA1UUBMH93">
+                </div>
+            </div>
+                <div class="editorLine">
+                    <div class="editorLineLeft">
+                        <label>登记注册类型：</label>
+                        <input type="text" value="">
+                    </div>
+                    <div class="editorLineRight">
+                        <label>注册日期：</label>
+                        <span class="editorDate">
+                            <input type="text" value="" class="date layui-input" id="date">
+                            <span class="layui-icon" id="testdateIcon">&#xe637;</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="editorLine">
+                    <div class="editorLineLeft">
+                        <label>企业类型：</label>
+                        <input type="text" value="">
+                    </div>
+                    <div class="editorLineRight">
+                        <label>社会统一信用代码：</label>
+                        <input type="text" value="">
+                    </div>
+                </div>
+                <div class="editorLine">
+                    <div class="editorLineLeft">
+                        <label class="required">地区：</label>
+                        <div class="layui-input-inline">
+                            <select name="quiz1">
+                                <option value="">请选择省</option>
+                                <option value="浙江" selected="">浙江省</option>
+                                <option value="你的工号">江西省</option>
+                                <option value="你最喜欢的老师">福建省</option>
+                            </select>
+                        </div>
+                        <div class="layui-input-inline">
+                            <select name="quiz2">
+                                <option value="">请选择市</option>
+                                <option value="杭州">杭州</option>
+                                <option value="宁波" disabled="">宁波</option>
+                                <option value="温州">温州</option>
+                                <option value="温州">台州</option>
+                                <option value="温州">绍兴</option>
+                            </select>
+                        </div>
+                        <div class="layui-input-inline">
+                            <select name="quiz3">
+                                <option value="">请选择县/区</option>
+                                <option value="西湖区">西湖区</option>
+                                <option value="余杭区">余杭区</option>
+                                <option value="拱墅区">临安市</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="editorLineRight">
+                        <label class="required">营业地址：</label>
+                        <input type="text" value="">
+                    </div>
+                </div>
+                <div class="editorLine">
+                    <div class="editorLineLeft">
+                        <label class="operate">经营范围：</label>
+                        <textarea name="" id="textA" cols="30" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="editorLine">
+                    <div class="editorLineLeft">
+                        <label>法定代表人：</label>
+                        <input type="text" value="">
+                    </div>
+                    <div class="editorLineRight">
+                        <label>联系方式：</label>
+                        <input type="text" value="">
+                    </div>
+                </div>
+                <div class="editorLine">
+                    <div class="editorLineLeft">
+                        <label class="required">财务联系人：</label>
+                        <input type="text" value="">
+                    </div>
+                    <div class="editorLineRight">
+                        <label class="required">联系方式：</label>
+                        <input type="text" value="">
+                    </div>
+                </div>
+                <div class="editorLine">
+                    <div class="editorLineLeft">
+                        <label>企业联系人：</label>
+                        <input type="text" value="">
+                    </div>
+                    <div class="editorLineRight">
+                        <label>联系方式：</label>
+                        <input type="text" value="">
+                    </div>
+                </div>
+                <div class="editorLine">
+                    <div class="editorLineLeft">
+                        <label class="required">纳税人资格：</label>
+                        <input type="text" value="">
+                    </div>
+                    <div class="editorLineRight">
+                        <label>纳税人信用等级：</label>
+                        <input type="text" value="">
+                    </div>
+                </div>
+                <div class="editorLine">
+                    <div class="editorLineLeft">
+                        <label>注册资本：</label>
+                        <input type="text" value="">
+                    </div>
+                    <div class="editorLineRight">
+                        <label>实收资本：</label>
+                        <input type="text" value="">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="accountInfo"></div>
+    </div>
+</div>
+<!--<script src="../common/js/vue.min.js"></script>-->
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
+<!--<script src="../common/js/jquery-2.2.4.js"></script>-->
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="../common/layui/layui.js" charset="utf-8"></script>
+<script>
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+        laydate.render({
+            elem: '#date'
+            ,eventElem: '#testdateIcon'
+            ,trigger: 'click'
+        });
+
+    })
+</script>
+</body>
+</html>

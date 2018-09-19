@@ -1,0 +1,65 @@
+@charset "utf-8";
+.bankSearch{
+    height: 24px;
+}
+.selectBank{
+    float:left;
+    width: 100px;
+    position:relative;
+}
+.selectCity{
+    float:left;
+    width:150px;
+    margin-left:20px;
+    position:relative;
+}
+.selectTotal,.selectCurrency{
+    height: 24px;
+    line-height:24px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 12px;
+    text-indent: 6px;
+    color:#333;
+    position:relative;
+}
+.selectTotal{
+    width:100px;
+}
+.selectCurrency{
+    width:150px;
+}
+.selectTotal .icon--xialajiantou,.selectCurrency .icon--xialajiantou{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor:pointer;
+}
+.showBank,.showCurrency{
+    font-size: 11px;
+    border:1px solid #999;
+    border-radius: 4px;
+    border-top: none;
+    padding-bottom:10px;
+    position:absolute;
+    top:24px;
+    left:0;
+    background:#fff;
+    z-index: 9;
+}
+.showBank{
+    width:100px;
+}
+.showCurrency{
+    width:150px;
+    height:200px;
+    overflow:auto;
+}
+.showBank li,.showCurrency li{
+    line-height:24px;
+    text-indent: 6px;
+}
+.showBank li:hover,.showCurrency li:hover{
+    background:#e6a23c;
+    cursor:pointer;
+}

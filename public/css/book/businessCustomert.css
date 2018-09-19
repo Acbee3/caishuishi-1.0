@@ -1,0 +1,269 @@
+@charset "utf-8";
+/*-------------------此css用到的页面是---客户-供应商--其他往来--投资方-银行账户--------------*/
+/*----------------table上面的search-----------------*/
+.businessSearch{
+    padding-right:17px;
+}
+.businessSearch:after{
+    display:block;
+    content: '';
+    clear:both;
+}
+.businessSearch .search{
+    width:210px;
+    height:30px;
+    border: 1px solid #f97d3c;
+    border-radius:4px;
+    position:relative;
+    padding-left:2px;
+    float:left;
+}
+.businessSearch input{
+    width:146px;
+    height:26px;
+    font-size:14px;
+    border:none;
+    text-indent:8px;
+}
+.businessSearch input::-moz-placeholder{
+    color:#333;
+}
+.businessSearch input::-webkit-input-placeholder{
+    color:#333;
+}
+.businessSearch input:-ms-input-placeholder{
+    color:#333;
+}
+.businessSearch .searchBtn{
+    position:absolute;
+    top:0;
+    right:0;
+    display:inline-block;
+    width:64px;
+    height:28px;
+    line-height:28px;
+    text-align: center;
+    background:#f97d3c;
+    color:#fff;
+    font-size:14px;
+    border-radius:0 2px 2px 0;
+    cursor:pointer;
+}
+.businessSearch .icon-search{
+    position:absolute;
+    display:inline-block;
+    width:30px;
+    height:36px;
+    line-height:36px;
+    cursor:pointer;
+    right:0;
+    top:0;
+    font-size:26px;
+    color:#333;
+}
+.businessSearch .businessEditor{
+    float:right;
+    font-size:0;
+}
+.businessSearch .businessEditor .editorBtn{
+    display:inline-block;
+    height:28px;
+    line-height:28px;
+    color:#fff;
+    border-radius:3px;
+    padding:0 10px;
+    font-size:14px;
+}
+.businessSearch .businessEditor .businessAdd{
+    background:#49b18d;
+}
+.businessSearch .businessEditor .businessDel{
+    background:#ff5757;
+    color:#fff;
+    margin-left:20px;
+}
+/*----businessDate----*/
+.businessDate{
+    padding:12px 20px 12px 20px;
+}
+/*----businessTable----*/
+.businessTable{
+    margin-top:14px;
+}
+.businessTable thead tr{
+    height:48px;
+    line-height:48px;
+    background:#cecece;
+    color:#3d3d3d;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.businessTable thead tr th {
+    border-width: 0 1px 1px 1px;
+    border-style: dotted;
+    border-color: #adadad;
+}
+.tableScroll tbody tr td{
+    border-width: 0 1px 1px 1px;
+    border-style: dotted;
+    border-color: #ccc;
+}
+.businessTable tbody tr{
+    height:40px;
+    line-height:40px;
+    font-size:12px;
+}
+.businessTable tbody .statusBtn{
+    display:inline-block;
+    height:26px;
+    line-height:26px;
+    padding:0 8px;
+    border-radius:3px;
+}
+.businessTable tbody .icon-bianji{
+    color:#49b18d;
+    font-size:20px;
+    display:inline-block;
+    padding: 0 8px;
+}
+.bankSatrt{
+    background:#ec7638;
+    color:#fff;
+}
+.bankSatrt:hover{
+    color:#fff;
+}
+.bankStop{
+    background:#ccc;
+    color:#333;
+}
+.bankStop:hover{
+    color:#333;
+}
+/*-------客户的dialog----------弹出框----*/
+.businessDialog,.editorDialog,.bankDialog{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.3);
+}
+.bussinessContent{
+    position:absolute;
+    width:430px;
+    height:420px;
+    left:50%;
+    top:50%;
+    margin:-230px 0 0 -215px;
+    background:#fff;
+    border-radius:4px;
+}
+.bussinessContent .bussinessTitle{
+    width:100%;
+    height:42px;
+    line-height:42px;
+    padding:0 20px 0 22px;
+    background:#f97d3c;
+    color:#fff;
+}
+.bussinessContent .bussinessTitle:after{
+    display:block;
+    content: '';
+    clear:both;
+}
+.bussinessContent .bussinessTitle p{
+    float:left;
+    font-size:14px;
+    font-weight:bold;
+}
+.bussinessContent .bussinessTitle>span{
+    float:right;
+    cursor:pointer;
+    display:inline-block;
+    width:18px;
+    height:18px;
+    font-size:18px;
+    text-align: center;
+    line-height:18px;
+    margin-top:12px;
+    color:#fff;
+}
+.bussinessContent #edit_data{
+    padding:0 20px;
+}
+.bussiness-item{
+    margin-top:14px;
+}
+.bussiness-item label{
+    display:inline-block;
+    width:90px;
+    height:30px;
+    line-height:30px;
+    font-size:14px;
+    text-align: right;
+    margin-right:10px;
+}
+#create_data{
+    padding:0 20px;
+}
+.bussiness-item input,.bussiness-item select{
+    width:280px;
+    height:26px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+.bussiness-item input{
+    text-indent: 4px;
+}
+.bussinessBtn{
+    text-align: right;
+    margin-top:20px;
+}
+.bussinessBtn>a{
+    display:inline-block;
+    padding:0 10px;
+    line-height:28px;
+    border-radius:4px;
+    color:#fff;
+}
+.bussinessBtn>a.sureBtn{
+    background:#f97d3c;
+    margin-right:20px;
+}
+.bussinessBtn>a.cancleBtn{
+    background:#fff;
+    border:1px solid #ffa5a5;
+    border-radius:4px;
+    color:#ff5757;
+}
+/*----银行的高度--*/
+#bankInfo1,#bankInfo{
+    height:200px;
+}
+/*-----------删除弹窗---------*/
+.businessAlert .layui-layer-title{
+    padding:0 20px 0 22px;
+    background:#f97d3c;
+    color:#fff;
+    font-size:14px;
+    font-weight:bold;
+}
+.businessAlert .layui-layer-btn .layui-layer-btn0{
+    background:#f97d3c;
+    border-radius:4px;
+    margin:5px 20px 0;
+    padding:0 10px;
+    border-color:#f97d3c;
+}
+.businessAlert .layui-layer-btn .layui-layer-btn1{
+    border-color:#ffa5a5;
+    margin:5px 0 0;
+    padding:0 10px;
+    border-radius:4px;
+    color:#ff5757;
+}
+.businessAlert .layui-layer-setwin .layui-layer-close1{
+    background-position: -87px -39px;
+}

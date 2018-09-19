@@ -1,0 +1,65 @@
+@charset "utf-8";
+.search{
+    height: 24px;
+}
+.search .selectFilter{
+    float:left;
+    width: 200px;
+    position:relative;
+}
+.selectHead{
+    width: 200px;
+    height: 24px;
+    line-height:24px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 12px;
+    text-indent: 6px;
+    color:#333;
+    position:relative;
+}
+.selectHead .icon--xialajiantou{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor:pointer;
+}
+.showTitle{
+    font-size: 11px;
+    width:200px;
+    border:1px solid #999;
+    border-radius: 4px;
+    border-top: none;
+    padding-bottom:10px;
+    position:absolute;
+    top:24px;
+    left:0;
+    background:#fff;
+    z-index: 9;
+}
+.showTitle li{
+    line-height:24px;
+    text-indent: 6px;
+}
+.showTitle li:hover{
+    background:#e6a23c;
+    cursor:pointer;
+}
+.searchContainer{
+    width:360px;
+    height:24px;
+    line-height:24px;
+    border: 1px solid #333;
+    border-radius:4px;
+    float:left;
+    margin-left:20px;
+}
+.searchContainer input{
+    font-size:12px;
+    width:330px;
+    text-indent: 8px;
+    border: none;
+}
+.searchContainer .icon-search{
+    cursor:pointer;
+}

@@ -1,0 +1,248 @@
+@charset"utf-8";
+/*----------此css用到的页面时--初始数据的财务------*/
+
+
+/*导入按钮*/
+.daoru {
+    padding: 0 15px;
+    background-color: #f97d3c;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    float: right;
+    cursor: pointer;
+}
+
+
+#accountWrapper{
+    padding:10px 20px;
+}
+.tabTitle{
+    width:100%;
+    height:36px;
+    border-bottom:1px solid #f97d3c;
+}
+.tabTitle:after{
+    display:block;
+    content:'';
+    clear:both;
+}
+.tabTitle .menu{
+    float:left;
+}
+.tabTitle .menu li{
+    height:36px;
+    line-height:36px;
+    color:#000;
+    padding:0 12px;
+}
+.tabTitle .menu li.active{
+    color:#fff;
+    background:#f97d3c;
+    border-radius:4px 4px 0 0;
+}
+.tabTitle .btnRight{
+    float:right;
+    font-size:0;
+}
+.tabTitle .btnRight a{
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    color:#fff;
+    padding:0 10px;
+    border-radius:4px;
+    font-size:14px;
+}
+.tabTitle .btnRight a.initDate{
+    background:#ff5757;
+    margin-right:20px;
+}
+.tabTitle .btnRight a.hiddenDate{
+    background:#25a1f8;
+}
+/*-----table-------*/
+.accountTable{
+    margin-top:14px;
+}
+.accountTable tr{
+    height:36px;
+    line-height:36px;
+    background:#fff;
+}
+.accountTable tr td{
+    border-width: 0 1px 1px 1px;
+    border-style: dotted;
+    border-color: #adadad;
+}
+.accountHead tr{
+    color:#3d3d3d;
+    background:#cecece;
+    font-size:14px;
+    font-weight:bold;
+}
+.accountBody tr td:nth-child(1),.accountBody tr td:nth-child(2),.accountFooter tr td:nth-child(2){
+    text-align: left;
+    padding-left:4px;
+}
+.accountBody tr td:nth-child(3),.accountBody tr td:nth-child(4),.accountFooter tr td:nth-child(3),.accountFooter tr td:nth-child(4){
+    text-align: right;
+    padding-right:4px;
+}
+.accounts{
+    position:absolute;
+    left:0;
+    bottom:0;
+    padding:0 20px;
+}
+.accountFooter tr td{
+    border-width:1px 1px 0 1px;
+    border-style: dotted;
+    border-color: #ccc;
+}
+.accountBody i{
+    cursor:pointer;
+    font-size:20px;
+}
+.accountBody .initEditor{
+    color:#49b18d;
+}
+.accountBody .initKeep{
+    color:#49b18d;
+}
+.accountBody tr td input{
+    width:100%;
+    height:100%;
+}
+/*----总计--*/
+.totalPrice a.accountBody{
+    color:#f97d3c;
+}
+.totalPrice a.errorColor{
+    color:#f66;
+    font-weight:800;
+}
+/*--------弹窗的table----------*/
+#checkNum{
+    padding:10px;
+}
+#checkNum thead tr{
+    height:30px;
+    line-height:30px;
+    background:#cecece;
+}
+#checkNum thead tr th{
+    color:#fff;
+    font-size:14px;
+    border-width: 0 1px 1px 1px;
+    border-style: dotted;
+    border-color: #ccc;
+}
+#checkNum tbody tr{
+    height:30px;
+    line-height:30px;
+}
+#checkNum tbody tr td{
+    border-width: 0 1px 1px 1px;
+    border-style: dotted;
+    border-color: #ccc;
+}
+.testComputed .layui-layer-title{
+    background:#f97d3c;
+    padding:0 20px 0 22px;
+    color:#fff;
+    font-weight:bold;
+}
+.testComputed .layui-layer-btn .layui-layer-btn0{
+    background:#f97d3c;
+    padding:0 10px;
+    border-color:#f97d3c;
+    border-radius:4px;
+}
+.testComputed .layui-layer-btn .layui-layer-btn1{
+    color:#ff5757;
+    border:1px solid #ffa5a5;
+    border-radius:4px;
+    padding:0 10px;
+}
+.testComputed .layui-layer-setwin .layui-layer-close1{
+    background-position: -87px -39px;
+}
+/*----------删除弹窗-----------*/
+
+
+.layui-layer-title {
+    background-color: #f97d3c!important;
+    color: #fff!important;
+    border-radius: 4px!important;
+}
+
+.layui-layer {
+    border-radius: 4px!important;
+}
+
+.layui-layer-btn a {
+    border-radius: 4px!important;
+    margin: 5px 10px 0!important;
+}
+
+.layui-layer-dialog {
+    border-radius: 4px!important;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+    background-color: #f97d3c!important;
+    border: none;
+}
+
+.layui-layer-btn .layui-layer-btn1 {
+    border: 1px solid #ffa5a5;
+    color: #ff5757;
+}
+
+.layui-layer-setwin .layui-layer-close1 {
+    background-position: -87px -39px!important;
+}
+
+/*导入弹框样式*/
+.components .content {
+    padding: 5px;
+    padding-left: 35px;
+}
+
+.components form {
+    margin-top: 35px;
+}
+
+.components input[readonly] {
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    outline: none;
+    margin: 0;
+    width: 215px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.components #fileUp {
+    display: inline-block;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    color: #000;
+    border-left: 0;
+    height: 30px;
+    line-height: 30px;
+    margin-left: -4px;
+    vertical-align: top;
+}
+
+.components .download {
+    margin-top: 10px;
+    font-size: 12px
+}
+
+.components .attention {
+    margin-top: 20px;
+}

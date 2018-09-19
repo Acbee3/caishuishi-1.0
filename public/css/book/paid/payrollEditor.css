@@ -1,0 +1,416 @@
+@charset"utf-8";
+.payrollEditorWrapper{
+     padding:20px 0;
+}
+.payrollEditorMenu{
+    padding:0 20px;
+    height:40px;
+}
+.payrollEditorMenu .payrollBlack{
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    color:#ff5757;
+    background:#fff;
+    border: 1px solid #ffa5a5;
+    padding: 0 12px;
+    border-radius:4px;
+}
+.payrollEditorSearch{
+    width:200px;
+    height:30px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    position:relative;
+}
+.payrollEditorSearch input{
+    width:160px;
+    height:28px;
+    line-height:28px;
+    border:none;
+}
+.payrollEditorSearch .search{
+    position:absolute;
+    right:0;
+    display:inline-block;
+    width:30px;
+    height:28px;
+    text-align:center;
+    line-height:28px;
+    border-left:1px solid #ccc;
+    cursor:pointer;
+}
+.payrollEditorSearch .search:hover{
+    background:#eee;
+}
+.payrollEditorMenu-left{
+    float:left;
+}
+.payrollEditorMenu-left>div{
+    display:inline-block;
+}
+.payrollEditorMenu-left .payrollMenuBlack{
+    margin-right:10px;
+}
+.payrollMenuSearch span{
+    margin-right:10px;
+}
+.payrollMenuSearch .payrollEditorSearch{
+    display:inline-block;
+    padding-left:10px;
+}
+/*-----payrollEditorMenu-right--*/
+.payrollEditorMenu-right{
+    float:right;
+}
+.payrollEditorMenu-right a{
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    color:#fff;
+    background:#568bfb;
+    padding:0 12px;
+    border-radius:4px;
+    margin-right:12px;
+}
+
+.payrollEditorMenu-right a.add {
+    background-color: #49b18d;
+}
+.payrollEditorMenu-right a.save {
+    background-color: #f97d3c;
+}
+.payrollEditorMenu-right a.excel {
+    background-color: #49b18d;
+}
+.payrollEditorMenu-right a.print {
+    background-color: #25a1f8;
+}
+.payrollEditorMenu-right a.copySalary {
+    background-color: #25a1f8;
+}
+.payrollEditorMenu-right a.copySalary {
+    background-color: #f97d3c;
+}
+.payrollEditorMenu-right .payrollEditorMenu-more{
+    display:inline-block;
+}
+.payrollEditorMenu-more{
+    width:80px;
+    text-align:center;
+    height:30px;
+    line-height:30px;
+    border-radius:4px;
+    background:#f97d3c;
+    color:#fff;
+    cursor:pointer;
+    position:relative;
+}
+.payrollEditorMenu-more:hover .payrollMore-select{
+    display:block;
+}
+.payrollMore-select{
+    position:absolute;
+    top:28px;
+    left:0;
+    width:80px;
+    background:#fff;
+    border:1px solid #ccc;
+    border-radius:4px;
+    display:none;
+}
+.payrollMore-select li{
+    height:26px;
+    line-height:26px;
+    color:#333;
+}
+.payrollMore-select li:hover{
+    background:#eee;
+}
+.payrollEditorTable{
+    padding-top:10px;
+}
+.payrollEditorTable .editorTable-header{
+
+}
+.payrollEditorTable .editorTable-header tr{
+    height:36px;
+    background:#cecece;
+}
+.payrollEditorTable .editorTable-header tr td{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#adadad;
+    color:#3d3d3d;
+    font-size:14px;
+    font-weight: bold;
+}
+.editorTable-Center tr{
+    height:36px;
+}
+.editorTable-Center tr td{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#ccc;
+    color:#333;
+    font-size:12px;
+    position:relative;
+}
+.editorTable-Center tr td i{
+    font-size:20px;
+    color:#49b18d;
+    cursor:pointer;
+}
+.editorTable-Center tr td>input{
+    width:100%;
+}
+.editorTable-Center tr td i.del{
+    color:#ff5757;
+    padding-left: 5px;
+}
+.payroll-fy{
+    box-sizing:border-box;
+    border:1px solid #ccc;
+}
+.payroll-fy input{
+    border:none;
+    display:inline-block;
+    width:80%;
+    float:left;
+}
+.payroll-fy span{
+    display:inline-block;
+    width:19%;
+    border:1px solid #ccc;
+    position:absolute;
+    right:0;
+    cursor:pointer;
+}
+.payroll-fy span:hover{
+    background:#eee;
+}
+/*-------正常编辑的底部-------------*/
+.editorFooter{
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+.editorFooter tr{
+    height:36px;
+}
+.editorFooter tr td{
+    border-width:1px 1px 0 1px;
+    border-style:dotted;
+    border-color:#ccc;
+}
+/*-------正常薪资新增弹窗-------*/
+.addPersorner-top thead{
+    background:#cecece;
+}
+.addPersorner-top thead tr,.addPersorner-body tr{
+    height:36px;
+}
+.addPersorner-top thead tr th,.addPersorner-body tr td{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#adadad;
+}
+.addPersonal .layui-layer-content{
+    padding:20px;
+}
+/*==费用类型-----*/
+.payroll-menu{
+    width:100%;
+    height:27px;
+    border:1px solid #ccc;
+}
+.payroll-menu .payroll-select{
+    float:left;
+    width:100%;
+}
+.payroll-menu .payroll-select input{
+    width:85%;
+    float:left;
+    line-height:24px;
+    border:none;
+}
+.payroll-menu .payroll-select .textIcon{
+    width:15%;
+    display:inline-block;
+    height:27px;
+    line-height:27px;
+    /*border-left:1px solid #ccc;*/
+    cursor:pointer;
+}
+.payroll-menu .payroll-select .textIcon .icon{
+    color:#ccc;
+}
+.payroll-menu .payroll-select .textIcon:hover{
+    background:#eee;
+}
+.payrollSelect_ul{
+    position:absolute;
+    width:100%;
+    top:33px;
+    left:0;
+    height:140px;
+    overflow-y: scroll;
+    border:1px solid #ccc;
+    padding:6px 0;
+    background:#fff;
+    z-index: 99;
+}
+.payrollSelect_ul li{
+    text-align: left;
+    padding:0 6px;
+    line-height:22px;
+    cursor:pointer;
+}
+.payrollSelect_ul li:hover{
+    background:#ffe3ba;
+}
+.payrollSelect_ul em{
+    font-style: normal;
+    font-size:12px;
+}
+.payrollSelect_ul li> span{
+    float:right;
+}
+.payroll-tableCenter table td>input{
+    width:100%;
+    border:1px solid #ccc;
+    height:27px;
+    font-size:12px;
+    text-indent: 4px;
+}
+/*-----------全年一次性奖金编辑与查看-----------*/
+.yearTable-header table thead{
+    background:#425772;
+}
+.yearTable-header table thead tr{
+    height:36px;
+    color:#fff;
+    font-size:14px;
+}
+.yearTable-Center table tr{
+    height:36px;
+}
+.yearTable-header table th,.yearTable-Center table td{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#ccc;
+    position:relative;
+}
+.yearTable-Center table td input{
+    width:100%;
+    height:100%;
+}
+.yearTable-Center table td i{
+    color:#568bfb;
+    font-size:18px;
+    cursor:pointer;
+}
+.yearTable-Center table td i.del{
+    color:#f66;
+}
+.yearMoneyEditor .layui-layer-content{
+    padding:10px;
+}
+/*----------------个人生产经营-----------*/
+.personalType{
+    padding:0 14px;
+    height:30px;
+}
+.personalMenu{
+    display:inline-block;
+    margin-right:14px;
+}
+.personalMenu span{
+    font-weight: 800;
+    font-size:14px;
+    display:inline-block;
+    width:66px;
+}
+.personalMenu i{
+    font-style: normal;
+}
+.lrInfo{
+    padding:0 14px;
+    height:30px;
+    margin-bottom:10px;
+}
+.lrInfo:after{
+    display:block;
+    content: '';
+    clear:both;
+}
+.lrInfo .text{
+    display:inline-block;
+    width:66px;
+    height:30px;
+    line-height:30px;
+    float:left;
+    font-weight:800;
+    font-size:14px;
+}
+.lrInfo .lrInfo-right{
+    float:left;
+    height:30px;
+    line-height:30px;
+}
+.lrInfo .lrInfo-right .lrInfo-item{
+    display:inline-block;
+    margin-right:14px;
+}
+.lrInfo .lrInfo-right .lrInfo-item>input{
+    width:130px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    height:26px;
+    text-indent:4px;
+}
+
+#copy_monthShow .iconfont, #to_monthShow .iconfont {
+    color: #f97d3c;
+}
+
+.layui-layer-title {
+    background-color: #f97d3c!important;
+    color: #fff!important;
+    border-radius: 4px!important;
+}
+
+.layui-layer {
+    border-radius: 4px!important;
+}
+
+.layui-layer-btn a {
+    border-radius: 4px!important;
+    margin: 5px 10px 0!important;
+}
+
+.layui-layer-dialog {
+    border-radius: 4px!important;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+    background-color: #f97d3c!important;
+    border: none;
+}
+
+.layui-layer-btn .layui-layer-btn1 {
+    border: 1px solid #ffa5a5;
+    color: #ff5757;
+}
+
+.layui-layer-setwin .layui-layer-close1 {
+    background-position: -87px -39px!important;
+}
+
+.font12 {
+    font-size: 12px!important;
+}
+
+.icon-xialazhishijiantou {
+    font-size: 12px;
+}

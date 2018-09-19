@@ -1,0 +1,1006 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-width: 1009px;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tr {
+    text-align: right;
+}
+
+.dpn {
+    display: none;
+}
+
+/*.checkout {*/
+/*height: 100%;*/
+/*}*/
+
+/*左边的盒子 box1*/
+.box1 {
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    float: left;
+}
+
+.box1 .qimochuli {
+    background: #f6f6f6;
+    margin: 20px;
+    margin-right: 0;
+    padding: 25px;
+    padding-right: 40px;
+    overflow: auto;
+    min-width: 512px;
+}
+
+.titl1 {
+    width: 38px;
+    height: 38px;
+    line-height: 32px;
+    border: 3px solid #f87b27;
+    color: #f87b27;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.titlcontent {
+    color: #f87b27;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.qimochuli .clBox {
+    padding: 25px 20px;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    margin: 30px 0 0 0;
+    background-color: #FFF;
+}
+
+.text1 {
+    font-size: 24px;
+    /*padding: 0 0 2px 0;*/
+    /*border-bottom: 2px solid #5c7ffe;*/
+    display: inline-block;
+}
+
+.text2 {
+    margin-top: 15px;
+}
+
+.btn1 {
+    margin-top: 16px;
+}
+
+/*背景图片*/
+.icon {
+    width: 94px;
+    height: 94px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.ico1 {
+    background: url(../../../common/images/qdpz.png) no-repeat center;
+}
+
+.ico2 {
+    background: url(../../../common/images/sjjt.png) no-repeat center;
+}
+
+.ico3 {
+    background: url(../../../common/images/syjz.png) no-repeat center;
+}
+
+/*右边的盒子 box2*/
+.box2 {
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    float: left;
+}
+
+.box2 .jzyujc {
+    background: #f6f6f6;
+    margin: 20px 20px 20px 0;
+    padding: 25px 0;
+    overflow: auto;
+    border-left: 1px dashed #e3e3e3;
+    min-width: 431px;
+}
+
+.jzyujc .pppp {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.jzyujc .colye {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #777777;
+}
+
+.quanWap {
+    width: 100%;
+    height: 268px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 80px;
+    /*background: url(../../../common/images/broken_line.png) repeat-x center;*/
+}
+
+.quanWap.active {
+    animation: brokenLine 4s infinite linear;
+}
+
+.quanWap .div {
+    width: 271px;
+    height: 271px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -134px 0 0 -134px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.quanWap .div1 {
+    background: url(../../../common/images/span.png) no-repeat center center;
+    background-size: 264px;
+}
+
+.quanWap .div1.active {
+    animation: circle 1s infinite linear;
+}
+
+.quanWap .div2 {
+    background: url(../../../common/images/bgcCircle.png) no-repeat center;
+}
+
+.quanWap .wenzi {
+    margin-top: 77px;
+    color: #fff;
+}
+
+.righttext1 {
+    font-size: 24px;
+    margin-top: 77px;
+    color: #ff7e69;
+    text-align: center;
+}
+
+.righttext2 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777777;
+    text-align: center;
+}
+
+.righttext3 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#jzzxq {
+    margin-left: 20px;
+    color: #3d3d3d;
+    font-size: 18px;
+    border-color: #cbcbcb;
+    background-color: transparent;
+}
+
+#jzzxq:hover {
+    /*text-decoration: underline;*/
+    cursor: pointer;
+}
+
+/*左边的盒子 box3 */
+.box3 {
+    width: 30%;
+    height: 100%;
+    overflow: auto;
+    float: left;
+    display: none;
+}
+
+.box3 .jkzs {
+    text-align: center;
+    background-color: #fff;
+    height: 100%;
+    margin: 20px;
+    padding: 25px 0;
+    overflow: auto;
+    border: 1px solid #ddd;
+}
+
+.box3 .quanWap {
+    margin-top: 9px;
+}
+
+/*.box3 .quanWap .wenzi {*/
+    /*margin-top: 109px;*/
+/*}*/
+
+.resText {
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.jkzs .jkzsTit {
+    margin-top: 68px;
+    font-size: 24px;
+}
+
+.checkTime {
+    color: #999;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.box3btns {
+    margin-top: 40px;
+}
+
+.box3 .zjjz, .box3 .fjz {
+    margin-left: 15px;
+}
+
+.goBack {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #7a8bc2;
+}
+
+/*右边的盒子 box4*/
+.box4 {
+    width: 70%;
+    height: 100%;
+    overflow: auto;
+    float: left;
+    display: none;
+}
+
+.box4 .default {
+    overflow: hidden;
+}
+
+.box4 .qdList {
+    margin: 19px 20px 19px 0;
+    padding: 25px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.qdList .title {
+    border-bottom: 1px dashed #ddd;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.qdList .itemTitle {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.qdList .abnormal {
+    font-size: 14px;
+    float: right;
+}
+
+.abnormal .abnormalItem {
+    font-size: 14px;
+    color: #7a8bc2;
+}
+
+.abnormal .abnormalItemNum {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #ed833f;
+}
+
+.qdList .abnormal i {
+    font-size: 18px;
+    color: #568bfb;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.cont {
+    padding: 0 20px;
+    background: #fafafa;
+}
+
+.cont li {
+    border-bottom: 1px dashed #ddd;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.errorMessage {
+    font-size: 12px;
+}
+
+.wrong {
+    color: #ed833f;
+}
+
+a.wrong:hover {
+    text-decoration: underline;
+    color: #ed833f;
+}
+
+.errorName {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.cont .icon-tixing {
+    color: #ed833f;
+    font-weight: 700;
+}
+
+.cont .icon-wancheng {
+    color: #568bfb;
+    font-weight: 700;
+}
+
+/*按钮*/
+.m-btns {
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.clBox .m-btns {
+    margin: 5px 0;
+}
+
+/*.m-btns-bor:hover {*/
+    /*background-color: #5c7ffe;*/
+    /*color: #fff;*/
+/*}*/
+
+.m-btns-blue {
+    color: #fff;
+    background: #21b589;
+    border: 1px solid #c6c6c6;
+}
+
+.m-btns-red {
+    color: #ff6600;
+    background: #fff;
+    border: 1px solid #ff6600;
+}
+
+.m-btns-red:hover {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+.m-btns-red2 {
+    color: #fff;
+    background: #fb8435;
+    border: 1px solid #fb8435;
+}
+
+.m-btns-red2:hover {
+    background-color: #f60;
+}
+
+.btns-radio {
+    border-radius: 4px;
+
+}
+
+.btns-select.btns-radio {
+    border-color: #ff9046;
+    color: #ff9046;
+}
+
+.m-btns-nom {
+    width: 110px;
+    line-height: 28px;
+    height: 30px;
+}
+
+.m-btns-bor {
+    color: #4a94ef;
+    background: #fff;
+    border: 1px solid #4a94ef;
+}
+
+.m-btns-big {
+    width: 128px;
+    line-height: 40px;
+    font-size: 18px;
+    height: 42px;
+}
+
+.m-btns-big.qrjz, .m-btns-big.fjz {
+    background-color: transparent;
+    color: #21b589;
+    border-color: #21b589;
+}
+
+.m-btns-null {
+    color: #c4c4c4;
+    background: #fff;
+    border: 1px solid #c4c4c4;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*弹框组件*/
+.components .layui-layer-title {
+    background: #f97d3c;
+    color: #fff;
+    border: none;
+}
+
+/*税金选择*/
+#selectSjjt .content {
+    height: 337px;
+    padding: 15px 20px;
+    overflow: auto;
+}
+
+#selectSjjt .content .stateControl {
+    display: inline-block;
+    height: 22px;
+    padding: 0 15px 0;
+    border-radius: 2px;
+    font-weight: normal !important;
+    line-height: 22px;
+    color: #fff;
+    background-color: #5c7ffe;
+    user-select: none;
+}
+
+#selectSjjt .content .stateControl.close {
+    color: #909090;
+    background-color: #dcdcdc;
+}
+
+#selectSjjt .content .stateControl:hover, #selectSjjt .content .iconfont:hover {
+    cursor: pointer;
+}
+
+#selectSjjt .content table {
+    border: 1px solid #e5eaef;
+}
+
+#selectSjjt .content table th {
+    background-color: #cecece;
+    color: #3d3d3d;
+}
+
+#selectSjjt .content table th, #selectSjjt .content table td {
+    margin: 0;
+    padding: 0 4px;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    height: 35px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+#selectSjjt .content table td {
+    border: 1px dashed #e5eaef;
+}
+
+/*结转设置*/
+#jiezhuangSz .content {
+    padding: 15px 20px;
+}
+
+#jiezhuangSz .content .tr-item {
+    color: #3f4e69;
+    border-bottom: 1px solid #3f4e69;
+}
+
+#jiezhuangSz .content .bzhl {
+    width: 120px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #c4c4c4;
+    background-color: #fff;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0 0 0 10px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+#jiezhuangSz .content td {
+    font-size: 12px;
+}
+
+/*自制下拉框*/
+#jiezhuangSz .content .huiduiKm {
+    width: 160px;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+#jiezhuangSz .content .huiduiKm input {
+    height: 100%;
+    width: 140px;
+    font-size: 12px;
+    vertical-align: middle;
+    border: none;
+    padding: 0 2px;
+}
+
+#jiezhuangSz .content .huiduiKm span {
+    border-left: 1px solid #ccc;
+    position: relative;
+    height: 21px;
+    width: 18px;
+}
+
+#jiezhuangSz .content .huiduiKm span::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid #ccc;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: 9px;
+    right: 5px;
+}
+
+#jiezhuangSz .content .huiduiKm span:hover {
+    background-color: #bdbdbd;
+    cursor: pointer;
+}
+
+#jiezhuangSz .content .huiduiKm span:hover::after {
+    border: 4px solid #fff;
+    border-left-color: #bdbdbd;
+    border-right-color: #bdbdbd;
+    border-bottom-color: #bdbdbd;
+}
+
+#jiezhuangSz .content .huiduiKm .kmItem {
+    position: absolute;
+    top: 21px;
+    left: -1px;
+    width: 160px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 12px;
+    z-index: 11;
+}
+
+#jiezhuangSz .content .huiduiKm .kmItem li {
+    line-height: 20px;
+    padding: 0 2px;
+    cursor: default;
+    text-align: left;
+    word-break: break-all;
+}
+
+#jiezhuangSz .content .huiduiKm .kmItem li:hover {
+    background-color: #ccc;
+}
+
+/*直接结账*/
+#zhijieJz .content {
+    position: relative;
+    padding: 20px;
+    line-height: 24px;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+#zhijieJz .content .pzTable td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+/*结账失败*/
+#jiezhangShibai .content {
+    position: relative;
+    padding: 20px;
+    line-height: 24px;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+/*反结账*/
+#fanJz .content {
+    position: relative;
+    padding: 20px;
+    line-height: 24px;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+/*清单凭证_批量生成凭证*/
+#qdpz_piliangPz .content {
+    position: relative;
+    padding: 20px;
+    line-height: 24px;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+#qdpz_piliangPz .content td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+/*税金计提_批量生成凭证*/
+#sjjt_piliangPz .content {
+    position: relative;
+    padding: 20px;
+    line-height: 24px;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+#sjjt_piliangPz .content td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+/*损益结转_批量生成凭证*/
+#syjz_piliangPz .content {
+    position: relative;
+    padding: 20px;
+    line-height: 24px;
+    height: 30px;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+/*查看税金计提凭证*/
+#sjjtPz .content {
+    padding: 5px;
+    height: 463px;
+    overflow: auto;
+}
+
+#sjjtPz .content table {
+    border: 1px solid #ccc;
+}
+
+#sjjtPz .content table th {
+    background-color: #3f4e69;
+    height: 32px;
+    border: 1px solid #ccc;
+    padding: 0 4px;
+    font-size: 14px;
+}
+
+#sjjtPz .content table td {
+    border: 1px dashed #ccc;
+    height: 32px;
+    padding: 0 4px;
+    font-size: 12px;
+}
+
+/*设置凭证模板*/
+#szPzmb .content {
+    padding: 10px 5px;
+    height: 302px;
+    position: relative;
+}
+
+#pzWarming {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#szPzmb .content table {
+    border: 1px solid #ccc;
+}
+
+#szPzmb .content table th {
+    background-color: #cecece;
+    height: 32px;
+    border: 1px solid #ccc;
+    padding: 0 4px;
+    font-size: 14px;
+}
+
+#szPzmb .content table td {
+    border: 1px dashed #ccc;
+    height: 32px;
+    padding: 0 4px;
+    font-size: 12px;
+}
+
+#szPzmb .content table .kjkmItem {
+    padding: 0;
+}
+
+#szPzmb .kjkm {
+    text-align: center;
+    height: 28px;
+    width: 100%;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+#szPzmb .kjkm input {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    vertical-align: middle;
+    border: none;
+    padding: 0 2px;
+}
+
+#szPzmb .kjkm span {
+    display: inline-block;
+    width: 17px;
+    height: 27px;
+    line-height: 27px;
+    border-left: 1px solid #ccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#szPzmb .kjkm span i {
+    color: #d7d8d7;
+}
+
+#szPzmb .kjkm span:hover {
+    background-color: #bdbdbd;
+    cursor: pointer;
+}
+
+#szPzmb .kjkm span:hover i {
+    color: #fff;
+}
+
+#szPzmb .kjkm .items {
+    position: absolute;
+    top: 26px;
+    left: -1px;
+    width: 205px;
+    max-height: 170px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 12px;
+    z-index: 11;
+}
+
+#szPzmb .kjkm .items li {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 2px;
+    cursor: default;
+}
+
+#szPzmb .kjkm .items li:hover {
+    background-color: #dfe9fa;
+}
+
+/*动画*/
+/*旋转*/
+@keyframes circle {
+    from { transform: rotate(0deg) }
+    to {
+        transform: rotate(360deg);
+        transition: all 0.6s;
+    }
+}
+
+/*折线平移*/
+@keyframes brokenLine {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -1000px;
+    }
+}
+
+.layui-layer {
+    border-radius: 4px!important;
+}
+
+.layui-layer-btn a {
+    border-radius: 4px!important;
+    margin: 5px 10px 0!important;
+}
+
+.layui-layer-dialog {
+    border-radius: 4px!important;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+    background-color: #f97d3c!important;
+    border: none;
+}
+
+.layui-layer-btn .layui-layer-btn1 {
+    border: 1px solid #ffa5a5;
+    color: #ff5757;
+}
+
+.layui-layer-setwin .layui-layer-close1 {
+    background-position: -87px -39px!important;
+}
+
+
+
+
+/*新增或样式覆盖*/
+.titlcontent{
+    color:#f97d3c;
+}
+.text1{
+    color: #3e3e3e;
+}
+.text2 {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #5c5c5c;
+}
+.btn1 {
+    margin-top: 24px;
+
+
+}
+.btns-select.btns-radio{
+    border:1px solid #ddd;
+    color:#5c5c5c;
+    font-size: 16px;
+    width: 110px;
+    height: 32px;
+}
+.qimochuli .clBox{
+    margin: 24px 0 0 0;
+}
+.m-btns-null{
+    border:1px solid #ddd;
+    color:#5c5c5c;
+    font-size: 16px;
+    width: 110px;
+    height: 32px;
+}
+.m-btns-blue {
+    background: #f97d3c;
+    border: 0;
+    font-size: 14px;
+}
+.m-btns-bor{
+    color: #5c5c5c;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+.m-btns-red {
+    color: #5c5c5c;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+.jzyujc .colye{
+    font-size: 16px;
+}
+.m-btns-red2 {
+    color: #fff;
+    background: #ff9046;
+    border: 1px solid #ff9046;
+}
+.m-btns-big.qrjz, .m-btns-big.fjz{
+    border:1px solid #ddd;
+    border-radius: 4px;
+    color:#3e3e3e;
+    font-size: 18px;
+}
+#jzzxq {
+    border:1px solid #ddd;
+    border-radius: 4px;
+    color:#3e3e3e;
+    font-size: 18px;
+}
+.jkzs .jkzsTit{
+    color:#3e3e3e;
+}
+.fs12{
+    font-size: 12px;
+}
+.fs14{
+    font-size: 14px;
+}
+.fs16{
+    font-size: 16px;
+}
+.fs18{
+    font-size: 18px;
+}
+.box3T {
+    text-align: left;
+    padding-left: 25px;
+}
+.m-btn-checkout{
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    font-size: 18px;
+    color: #3e3e3e;
+}
+.fontwrap{
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}
+.qdList .itemTitle{
+    border-left: 3px solid #f97d3c;
+    padding-left: 8px;
+    color: #333;
+    font-weight: bold;
+}
+.cont .icon-tixing {
+    color: #ff5757;
+}
+.cont .icon-wancheng {
+    color: #49b18d;
+}
+.qdList .abnormal {
+    font-weight: bold;
+}
+.abnormal .abnormalItem{
+    color: #333;
+}
+.wrong{
+    color: #ff5757;
+}
+.errorMessage {
+    color: #333;
+}

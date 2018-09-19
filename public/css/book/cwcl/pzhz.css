@@ -1,0 +1,384 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/*便利*/
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+/*头部左边*/
+.pzhz {
+    height: 100%;
+}
+
+.pzhz .header {
+    height: 68px;
+    padding: 0 18px;
+    line-height: 68px;
+}
+
+.pzhz .header .left {
+    height: 68px;
+}
+
+.pzhz .header .right {
+    height: 68px;
+}
+
+.pzhz .header .left .rq {
+    position: relative;
+}
+
+/*时间段*/
+.pzhz .header .left .dateDuration {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    padding-left: 13px;
+    padding-right: 30px;
+    max-width: 250px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+}
+
+.pzhz .header .left .dataOptions {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 372px;
+    height: 176px;
+    border: 1px solid #ccc;
+    padding: 18px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.pzhz .header .left .dataOptions .item {
+    height: 45px;
+    padding: 5px 0;
+}
+
+/*会计期间*/
+.pzhz .header .left .dataOptions .duration {
+    width: 260px;
+    height: 23px;
+    line-height: 23px;
+    margin-top: 22px;
+}
+
+.pzhz .header .left .dataOptions td > span {
+    margin-right: 12px;
+}
+
+.pzhz .header .left .dataOptions .show {
+    width: 110px;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.pzhz .header .left .dataOptions .show input {
+    height: 100%;
+    width: 90px;
+    font-size: 12px;
+    vertical-align: middle;
+    border: none;
+    padding: 0 2px;
+}
+
+.pzhz .header .left .dataOptions .show span {
+    border-left: 1px solid #ccc;
+    position: relative;
+    height: 21px;
+    width: 18px;
+}
+
+.pzhz .header .left .dataOptions .show span::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid #ccc;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: 9px;
+    right: 5px;
+}
+
+.pzhz .header .left .dataOptions .show span:hover {
+    background-color: #bdbdbd;
+    cursor: pointer;
+}
+
+.pzhz .header .left .dataOptions .show span:hover::after {
+    border: 4px solid #fff;
+    border-left-color: #bdbdbd;
+    border-right-color: #bdbdbd;
+    border-bottom-color: #bdbdbd;
+}
+/*下拉的时间*/
+.pzhz .header .left .dataOptions .show .shijian {
+    position: absolute;
+    top: 21px;
+    left: -1px;
+    width: 110px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 12px;
+    z-index: 11;
+}
+
+.pzhz .header .left .dataOptions .show .shijian li {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 2px;
+    cursor: default;
+}
+
+.pzhz .header .left .dateDuration:hover {
+    cursor: pointer;
+}
+
+.pzhz .header .left .dateDuration::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid #ccc;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: 13px;
+    right: 9px;
+}
+/*科目级次*/
+.pzhz .header .left .dataOptions .kmjc {
+    width: 260px;
+    height: 23px;
+    line-height: 23px;
+    margin-top: 22px;
+}
+
+.pzhz .header .left .dataOptions .kmjc .jici {
+    height: 23px;
+    width: 64px;
+    line-height: 23px;
+    border: 1px solid #ccc;
+}
+
+.pzhz .header .left .dataOptions .kmjc .jici input {
+    width: 50px;
+    border: none;
+    height: 21px;
+    padding: 0 2px;
+}
+
+.pzhz .header .left .dataOptions .kmjc .jici .updown {
+    width: 12px;
+    height: 22px;
+    border-left: 1px solid #ccc;
+}
+
+.pzhz .header .left .dataOptions .kmjc .jici .updown .zzbutton {
+    width: 12px;
+    height: 11px;
+    position: relative;
+    cursor: pointer;
+}
+
+.pzhz .header .left .dataOptions .kmjc .jici .updown .up::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid #ccc;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    top: -2px;
+    right: 2px;
+}
+
+.pzhz .header .left .dataOptions .kmjc .jici .updown .up {
+    border-bottom: 1px solid #ccc;
+}
+
+.pzhz .header .left .dataOptions .kmjc .jici .updown .down::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid #ccc;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    top: 4px;
+    right: 2px;
+}
+
+.pzhz .header .left .dataOptions .kmjc .jici .updown .up:hover::after {
+    border-bottom-color: #000;
+}
+
+.pzhz .header .left .dataOptions .kmjc .jici .updown .down:hover::after {
+    border-top-color: #000;
+}
+
+/*刷新按钮*/
+.pzhz .header .left .refresh {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0 13px;
+    height: 30px;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    color: #555;
+    cursor: pointer;
+}
+
+.pzhz .header .left .refresh:hover {
+    background-color: #f2f3f3;
+}
+
+.pzhz .header .left .pzsAndFjs {
+    font-size: 12px;
+}
+
+/*按钮*/
+.pzhz .header .left .dataOptions .btns {
+    height: 30px;
+    margin-top: 3px;
+    margin-top: 20px;
+}
+
+.pzhz .header .left .dataOptions .btns a {
+    height: 28px;
+    padding: 0 13px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    color: #000;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.pzhz .header .left .dataOptions .btns .reset {
+    margin-right: 10px;
+}
+
+.pzhz .header .left .dataOptions .btns .confirm {
+    background-color: #5c7ffe;
+    color: #fff;
+    font-weight: 700;
+}
+
+.pzhz .header .left .dataOptions .btns .reset:hover {
+    background-color: #d5d5d5;
+}
+
+.pzhz .header .left .dataOptions .btns .confirm:hover {
+    background-color: #7481BD;
+}
+
+/*头部右边*/
+.pzhz .header .right .excel, .pzhz .header .right .print {
+    display: inline-block;
+    height: 30px;
+    padding: 0 15px;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    margin: 0 5px;
+    line-height: 28px;
+    background-color: #5c7ffe;
+    color: #fff;
+    font-size: 12px;
+}
+
+.pzhz .header .right .excel:hover, .pzhz .header .right .print:hover {
+    background-color: #7481BD;
+    cursor: pointer;
+}
+
+/*表格部分*/
+.pzhz .tabledata {
+    position: relative;
+    height: 90%;
+    width: 100%;
+    overflow: auto;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.pzhz .tabledata th {
+    background-color: #404f69;
+    padding: 7px 0;
+}
+
+.pzhz table {
+    border: 1px solid #c6c6c6;
+}
+
+.pzhz table td, .pzhz table th {
+    border: 1px dashed #c6c6c6;
+}
+
+.pzhz table tr {
+    height: 35px;
+    font-size: 12px;
+}
+
+.pzhz table td {
+    padding: 0 5px;
+}
+/*行第一个a标签*/
+.pzhz table td a {
+    font-weight: 700;
+    color: #568bfb;
+}
+
+.pzhz table td a:hover {
+    text-decoration: underline;
+}
+
+.pzhz .tabledata .tableheader {
+    position: fixed;
+    top: 78px;
+    left: 10px;
+}
+
+
+
+

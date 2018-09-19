@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="cfs" basedir="build" default="name" xmlns:liquibase="antlib:liquibase.integration.ant">
+    <property file="dev_${user.name}.properties" />
+    <property name="version" value="1.0"></property>
+    <property name="build.name" value="${version}-${user.name}-cfs.tar.gz" />
+    <property name="build.file" value="target/${build.name}" />
+    <property name="php.path" value="${php.path}" />
+    <property name="remote.web.host" value="${remote.web.host}" />
+    <property name="remote.web.username" value="${remote.web.username}" />
+    <property name="remote.web.password" value="${remote.web.password}" />
+    <property name="remote.web.port" value="${remote.web.port}" />
+    <target name="name">
+        <echo>Your user name is ${user.name}.</echo>
+    </target>
+
+    <filterset id="myFilter" begintoken="@" endtoken="@" onmissingfiltersfile="ignore">
+        <filtersfile file="dev_${user.name}.properties"/>
+        <filter token="app.name" value="${app.name}"/>
+        <filter token="app.prefix" value="${app.prefix}"/>
+        <filter token="base.upload.path" value="${base.upload.path}"/>
+        <filter token="laravel.debug" value="${laravel.debug}"/>
+        <filter token="laravel.env" value="${laravel.env}"/>
+        <filter token="params.admin.email" value="${params.admin.email}"/>
+
+        <filter token="cfs.database.host" value="${cfs.database.host}"/>
+        <filter token="cfs.database.user" value="${cfs.database.user}"/>
+        <filter token="cfs.database.password" value="${cfs.database.password}"/>
+        <filter token="cfs.database.prefix" value="${cfs.database.prefix}"/>
+        <filter token="cfs.database.sid" value="${cfs.database.sid}"/>
+
+        <filter token="uc.domain" value="${uc.domain}"/>
+
+        <filter token="QINIU.ACCESS.KEY" value="${QINIU_ACCESS_KEY}"/>
+        <filter token="QINIU.SECRET.KEY" value="${QINIU_SECRET_KEY}"/>
+        <filter token="QINIU.BUCKET" value="${QINIU_BUCKET}"/>
+        <filter token="QINIU.DOMAIN" value="${QINIU_DOMAIN}"/>
+        <filter token="session.lifetime" value="${session.lifetime}"/>
+    </filterset>
+
+    <path id="classpath">
+        <pathelement location="${basedir}/createtable"/>
+    </path>
+    <target name="configure">
+        <copy file="env.example" tofile="../.env" overwrite="yes">
+            <filterset refid="myFilter">
+            </filterset>
+        </copy>
+    </target>
+
+    <target name="create-database">
+        <echo>connecting ${cfs.database.host}/${cfs.database.prefix}${cfs.database.sid} by ${cfs.database.user}</echo>
+        <exec dir="${basedir}/../" executable="${php.path}" failonerror="true">
+            <arg value="artisan"></arg>
+            <arg value="migrate"></arg>
+        </exec>
+    </target>
+
+    <target name="deploy" depends="package, configure, composer-install">
+        <echo>deploy to localhost, user=${user.name}</echo>
+        <untar src="${build.file}" compression="gzip" dest="${webroot.dir}" />
+    </target>
+
+    <target name="package" depends="configure, composer-install">
+        <echo>packaging, contains all files required for deploy in ${basedir}/../</echo>
+        <tar destfile="${build.file}" longfile="gnu" compression="gzip">
+            <tarfileset dir="${basedir}/../">
+                <exclude name="build.xml" />
+                <exclude name=".svn" />
+                <exclude name="build/**"/>
+                <exclude name="composer.*" />
+            </tarfileset>
+        </tar>
+    </target>
+
+    <target name="composer-install">
+        <echo>composer install dependence...</echo>
+        <exec dir="${basedir}/../" executable="${php.path}" failonerror="true">
+            <arg value="composer.phar"></arg>
+            <arg value="install"></arg>
+            <arg value="--no-scripts"></arg>
+        </exec>
+    </target>
+
+    <target name="composer-update">
+        <echo>composer update dependence...</echo>
+        <exec dir="${basedir}/../" executable="${php.path}" failonerror="true">
+            <arg value="composer.phar"></arg>
+            <arg value="update"></arg>
+        </exec>
+    </target>
+
+    <target name="deploy-remote" depends="package, configure, composer-install">
+        <echo>Uploading build tar file to ${webroot.dir}/../builds</echo>
+        <echo>This will take a few minutes...</echo>
+        <scp file="${build.file}" verbose="true" todir="${remote.web.username}@${remote.web.host}:${webroot.dir}/../builds" password="${remote.web.password}" trust="true" port="${remote.web.port}" />
+        <echo>deploy to ${remote.web.host} under ${webroot.dir}, user=${remote.web.username}</echo>
+        <sshexec host="${remote.web.host}" username="${remote.web.username}" password="${remote.web.password}"
+                 command="tar -zxf ${webroot.dir}/../builds/${build.name} -C ${webroot.dir}/;" trust="true" port="${remote.web.port}"/>
+        <echo>Upload Complete!</echo>
+    </target>
+
+    <target name="clearCompileCache">
+        <echo>php artisan cache:clear...</echo>
+        <exec dir="${basedir}/../" executable="${php.path}" failonerror="true">
+            <arg value="artisan"></arg>
+            <arg value="cache:clear"></arg>
+        </exec>
+    </target>
+
+    <target name="clearViewCache">
+        <echo>php artisan view:clear...</echo>
+        <exec dir="${basedir}/../" executable="${php.path}" failonerror="true">
+            <arg value="artisan"></arg>
+            <arg value="view:clear"></arg>
+        </exec>
+    </target>
+
+    <target name="dbSeed">
+        <echo>php artisan db:seed...</echo>
+        <exec dir="${basedir}/../" executable="${php.path}" failonerror="true">
+            <arg value="artisan"></arg>
+            <arg value="db:seed"></arg>
+        </exec>
+    </target>
+
+</project>

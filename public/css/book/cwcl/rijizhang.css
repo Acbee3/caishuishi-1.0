@@ -1,0 +1,526 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.rijizhang {
+    height: 100%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tc {
+    text-align: center;
+}
+/*头部标签*/
+.tab {
+    width: 100%;
+    height: 33px;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.tab ul li {
+    padding: 0px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 32px;
+    height: 32px;
+    border: 1px solid #c6c6c6;
+    border-right: none;
+    border-bottom: none;
+    float: left;
+}
+
+.tab ul li:hover {
+    background-color: #7481bd;
+}
+
+.tab ul li.active {
+    background-color: #404f69;
+    color: #fff;
+}
+
+.tab ul li:last-child {
+    border-right: 1px solid #c6c6c6;
+}
+
+/*标签页1 start*/
+/*通栏*/
+.tableContent .banner {
+    width: 100%;
+    min-width: 986px;
+    padding: 18px;
+    height: 67px;
+    /*background-color: hotpink;*/
+    line-height: 30px;
+}
+
+/*左边的选择框*/
+.banner .left .rq {
+    position: relative;
+}
+
+/*时间段*/
+.banner .left .dateDuration {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    padding-left: 13px;
+    padding-right: 30px;
+    max-width: 250px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+}
+
+.banner .left .dataOptions {
+    position: absolute;
+    top: 29px;
+    left: 0;
+    width: 372px;
+    height: 176px;
+    border: 1px solid #ccc;
+    padding: 18px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.banner .left .dataOptions .item {
+    height: 45px;
+    padding: 5px 0;
+    line-height: 24px;
+}
+
+/*会计期间*/
+.banner .left .dataOptions .duration {
+    width: 260px;
+    height: 23px;
+    line-height: 23px;
+    /*margin-top: 22px;*/
+}
+
+.banner .left .dataOptions td > span {
+    margin-right: 12px;
+}
+
+.banner .left .dataOptions .show {
+    width: 110px;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.banner .left .dataOptions .show input {
+    height: 100%;
+    width: 90px;
+    font-size: 12px;
+    vertical-align: middle;
+    border: none;
+    padding: 0 2px;
+}
+
+.banner .left .dataOptions .show span {
+    border-left: 1px solid #ccc;
+    position: relative;
+    height: 21px;
+    width: 18px;
+}
+
+.banner .left .dataOptions .show span::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid #ccc;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: 9px;
+    right: 5px;
+}
+
+.banner .left .dataOptions .show span:hover {
+    background-color: #bdbdbd;
+    cursor: pointer;
+}
+
+.banner .left .dataOptions .show span:hover::after {
+    border: 4px solid #fff;
+    border-left-color: #bdbdbd;
+    border-right-color: #bdbdbd;
+    border-bottom-color: #bdbdbd;
+}
+
+/*下拉的时间*/
+.banner .left .dataOptions .show .shijian {
+    position: absolute;
+    top: 21px;
+    left: -1px;
+    width: 110px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 12px;
+    z-index: 11;
+}
+
+.banner .left .dataOptions .show .shijian li {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 2px;
+    cursor: default;
+}
+
+.banner .left .dateDuration:hover {
+    cursor: pointer;
+}
+
+.banner .left .dateDuration::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid #ccc;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: 13px;
+    right: 9px;
+}
+
+/*科目级次*/
+.banner .left .dataOptions .kmjc {
+    width: 260px;
+    height: 23px;
+    line-height: 23px;
+    /*margin-top: 22px;*/
+}
+
+.banner .left .dataOptions .kmjc .jici {
+    height: 23px;
+    width: 64px;
+    line-height: 23px;
+    border: 1px solid #ccc;
+}
+
+.banner .left .dataOptions .kmjc .jici input {
+    width: 50px;
+    border: none;
+    height: 21px;
+    padding: 0 2px;
+}
+
+.banner .left .dataOptions .kmjc .jici .updown {
+    width: 12px;
+    height: 22px;
+    border-left: 1px solid #ccc;
+}
+
+.banner .left .dataOptions .kmjc .jici .updown .zzbutton {
+    width: 12px;
+    height: 11px;
+    position: relative;
+    cursor: pointer;
+}
+
+.banner .left .dataOptions .kmjc .jici .updown .up::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid #ccc;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    top: -2px;
+    right: 2px;
+}
+
+.banner .left .dataOptions .kmjc .jici .updown .up {
+    border-bottom: 1px solid #ccc;
+}
+
+.banner .left .dataOptions .kmjc .jici .updown .down::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid #ccc;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    top: 4px;
+    right: 2px;
+}
+
+.banner .left .dataOptions .kmjc .jici .updown .up:hover::after {
+    border-bottom-color: #000;
+}
+
+.banner .left .dataOptions .kmjc .jici .updown .down:hover::after {
+    border-top-color: #000;
+}
+
+/*刷新按钮*/
+.banner .left .refresh {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0 13px;
+    height: 30px;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    color: #555;
+    cursor: pointer;
+}
+
+.banner .left .refresh:hover {
+    background-color: #f2f3f3;
+}
+
+.banner .left .pzsAndFjs {
+    font-size: 12px;
+}
+
+/*按钮*/
+.banner .left .dataOptions .btns {
+    height: 30px;
+    margin-top: 3px;
+    margin-top: 20px;
+}
+
+.banner .left .dataOptions .btns a {
+    height: 28px;
+    padding: 0 13px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    color: #000;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.banner .left .dataOptions .btns .reset {
+    margin-right: 10px;
+}
+
+.banner .left .dataOptions .btns .confirm {
+    background-color: #5c7ffe;
+    color: #fff;
+    font-weight: 700;
+}
+
+.banner .left .dataOptions .btns .reset:hover {
+    background-color: #d5d5d5;
+}
+
+.banner .left .dataOptions .btns .confirm:hover {
+    background-color: #7481BD;
+}
+
+/*通栏右边*/
+.banner .right .excel, .banner .right .print {
+    display: inline-block;
+    height: 30px;
+    padding: 0 15px;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    margin: 0 5px;
+    line-height: 28px;
+    background-color: #5c7ffe;
+    color: #fff;
+    font-size: 12px;
+}
+
+.banner .right .excel:hover, .banner .right .print:hover {
+    background-color: #7481BD;
+    cursor: pointer;
+}
+
+/*表格数据*/
+.tableContent {
+    height: 94%;
+}
+
+.tableBox {
+    /*border: 1px solid #c6c6c6;*/
+    padding-right: 20px;
+    width: 100%;
+    height: 92%;
+    overflow: auto;
+    position: relative;
+}
+
+.tableBox .tableheader {
+    width: 100%;
+    position: fixed;
+    top: 113px;
+    left: 4px;
+    padding-right: 23px;
+}
+
+.tableBox .tableheader table {
+    border: 1px solid #c6c6c6;
+}
+
+.tableBox th {
+    padding: 7px 0;
+    background-color: #404f69;
+    border: 1px dashed #c6c6c6;
+    border-width: 0 1px 0 0;
+}
+
+.tableBox th:last-child {
+    border-right: none;
+}
+
+.tableBox .tablecontent td {
+    border: 1px dashed #c6c6c6;
+    border-top: none;
+    margin: 0;
+    padding: 0 4px;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    height: 35px;
+    line-height: 30px;
+    font-size: 12px;
+}
+/*标签页1 end*/
+
+/*标签页2 start*/
+.banner .left .dataOptions .bz {
+    margin-left: 43px;
+}
+
+.banner .left .dataOptions .bz .show {
+    width: 150px;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.banner .left .dataOptions .bz .show .shijian {
+    width: 150px;
+}
+
+.banner .left .dataOptions .bz .show input {
+    height: 100%;
+    width: 130px;
+    font-size: 12px;
+    vertical-align: middle;
+    border: none;
+    padding: 0 2px;
+}
+
+.banner .left .dataOptions .bz .show span {
+    border-left: 1px solid #ccc;
+    position: relative;
+    height: 21px;
+    width: 18px;
+}
+
+.zhanghu .show {
+    width: 200px;
+    height: 30px;
+    line-height: 23px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.zhanghu .show input {
+    height: 100%;
+    width: 180px;
+    font-size: 12px;
+    vertical-align: middle;
+    border: none;
+    padding: 0 2px;
+}
+
+.zhanghu .show span {
+    border-left: 1px solid #ccc;
+    position: relative;
+    height: 28px;
+    width: 18px;
+}
+
+.zhanghu .show span:hover {
+    background-color: #bdbdbd;
+    cursor: pointer;
+}
+
+.zhanghu .show span:hover::after {
+    border: 4px solid #fff;
+    border-left-color: #bdbdbd;
+    border-right-color: #bdbdbd;
+    border-bottom-color: #bdbdbd;
+}
+
+.zhanghu .show .shijian {
+    position: absolute;
+    top: 28px;
+    left: -1px;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 12px;
+    z-index: 11;
+}
+
+.yhzhanghu {
+    margin-left: 10px;
+}
+
+.zhanghu .show span::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid #ccc;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: 12px;
+    right: 5px;
+}
+
+
+
+
+
+

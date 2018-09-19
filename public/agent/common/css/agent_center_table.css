@@ -1,0 +1,615 @@
+@charset "utf-8";
+
+/*---- 代账中心table 样式　　add by newsboy9248  20180605 -------*/
+.editor {
+    color: #49b18d;
+}
+
+.addProject {
+    color: #49b18d;
+}
+
+.editor:hover {
+    color: #49b18d;
+}
+
+.addProject:hover {
+    color: #49b18d;
+}
+
+#tableWrapper .iconMenu {
+    font-size: 0;
+}
+
+#tableWrapper .iconMenu .iconfont {
+    font-size: 16px;
+}
+
+#tableWrapper .iconMenu .addProject {
+    margin-left: 24px;
+}
+
+#tableWrapper thead tr {
+    background: #cecece;
+    color: #3d3d3d;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+}
+
+#tableWrapper tbody tr {
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+#tableWrapper tbody tr td {
+    border-style: dotted;
+    border-width: 0 1px 1px 1px;
+    border-color: #ccc;
+}
+
+.layui-table-header, .layui-table tbody tr td {
+    text-align: left;
+}
+
+.container_agerant {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.container_agerant table td {
+    font-size: 12px;
+}
+
+.container_agerant .menu_bread {
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.container_agerant .menu_bread a {
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: #000;
+}
+
+.container_agerant .menu_bread a:last-child {
+    color: #f97d3c;
+}
+
+.container_agerant .menu_bread a.addUser {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    background: #24b482;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0 10px;
+    margin-top: 7px;
+}
+
+.container_agerant .menu_bread i {
+    width: 20px;
+    height: 8px;
+    display: inline-block;
+    text-align: center;
+    color: #ddd;
+}
+
+.container_agerant .menu_bread .home {
+    margin-left: 14px;
+}
+
+.container_agerant .menu_bread .layui-btn {
+    float: right;
+    color: #fff;
+}
+
+.container_agerant .top_area {
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    margin-bottom: 10px;
+}
+
+.container_agerant .top_area .layui-btn {
+    float: right;
+}
+
+.container_agerant .layui-btn {
+    float: left;
+}
+
+.container_agerant .form-group {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    height: auto;
+    min-height: 36px;
+    margin-bottom: 15px;
+
+}
+
+.container_agerant .form-group.twoRow {
+    height: 72px;
+}
+
+.container_agerant .form-group .control-label {
+
+}
+
+.container_agerant .form-group .form-control {
+}
+
+.container_agerant .form-group .col-sm-2 {
+    width: 200px;
+    padding: 8px 15px;
+    height: 36px;
+    line-height: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px 0 0 2px;
+    text-align: center;
+    background-color: #FBFBFB;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    float: left;
+    border-color: #ccc;
+    color: #12203d;
+}
+
+.container_agerant .form-group .col-sm-10 {
+    float: left;
+    left: -1px;
+    min-height: 36px;
+}
+
+.container_agerant .form-group .col-sm-10 .form-control {
+    min-height: 36px;
+    line-height: 34px;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    width: auto;
+    min-width: 1000px;
+    vertical-align: central;
+}
+
+.container_agerant .form-group .col-sm-10 .help-block {
+    margin-left: 10px;
+    color: red;
+}
+
+.container_agerant .form-group .col-sm-10 input {
+    text-indent: 6px;
+}
+
+.container_agerant .form-group .col-sm-10 textarea {
+    padding: 5px 5px;
+    margin-bottom: 15px;
+}
+
+.container_agerant .form-group .col-sm-10 .checkbox {
+    padding: 5px 5px;
+    margin-bottom: 15px;
+    width: auto;
+    min-width: 1000px;
+    border: 1px solid #CCC;
+    margin-left: -1px;
+}
+
+.container_agerant .form-group .col-sm-10 .checkbox label {
+    height: 32px;
+    line-height: 32px;
+    margin-right: 15px;
+}
+
+.container_agerant .form-group .col-sm-10 .form-control option {
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    width: auto;
+    text-indent: 5px;
+}
+
+.container_agerant .form-group-btns .col-sm-2 {
+    border: 1px solid #fff;
+    background: #fff;
+    /*display: none;*/
+}
+
+.container_agerant .form-group-btns .col-sm-10 .btn {
+    width: auto;
+    min-width: 200px;
+    background: #009688;
+    border: 1px solid #009688;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.container_agerant .form-group-btns .col-sm-10 .btn:hover {
+    background: #12203d;
+    border: 1px solid #12203d;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* -------- 分页　------------ */
+.container_agerant .pagination {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.container_agerant .pagination li {
+    width: auto;
+    min-width: 32px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    margin: 3px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.container_agerant .pagination li:first-child {
+    margin-left: 0px;
+}
+
+.container_agerant .pagination li span, .container_agerant .pagination li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+.container_agerant .pagination .active {
+    border: 1px solid #568bfb;
+}
+
+.container_agerant .pagination .active span {
+    background: #568bfb;
+    color: #fff;
+}
+
+.container_agerant .pagination .disabled span {
+    background: #f5f5f5;
+    color: #ccc;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* -------- 客户信息编辑按钮样式调整　------------ */
+.container_agerant .customerEditor .form-group .col-sm-10 {
+    margin-left: -50px;
+}
+
+/* --------　基础设置　角色权限　------------ */
+.base_roles_list　 {
+    width: 100%;
+    height: auto;
+    padding: 3px 3px;
+}
+
+.base_roles_list h2 {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    text-indent: 0.5em;
+    font-weight: bold;
+}
+
+.base_roles_list ul {
+    width: 100%;
+    padding: 2px 10px;
+}
+
+.base_roles_list ul li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.base_roles_list .role_name {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #f97d3c;
+}
+
+.base_roles_list .opt_btns {
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 11px;
+    margin-top: 4px;
+    margin-right: 5px;
+    display: none;
+    text-indent: 0em;
+    background: #ccc;
+    color: #333;
+    float: right;
+    border-radius: 3px;
+}
+
+.base_roles_list ul li:hover .opt_btns {
+    display: block;
+}
+
+/*.base_roles_list ul li:hover .role_name
+{
+    background: #35465a;
+    color: #fff;
+}*/
+.base_roles_list ul li .role_cur {
+    background: #f97d3c;
+    color: #fff;
+}
+
+/* --------　基础设置　客户授权　------------ */
+iframe {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    display: block;
+    border: 0;
+}
+
+.container_agerant .add_auth_user {
+
+}
+
+.container_agerant .add_auth_user .names {
+    width: auto;
+}
+
+.container_agerant .add_auth_user .fr {
+    float: right;
+
+}
+
+.container_agerant .add_auth_user .auth_btn {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #ccd;
+    background: #ccc;
+    counter-reset: #000;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    display: none;
+}
+
+.container_agerant .add_auth_user:hover .auth_btn {
+    display: block;
+}
+
+.auth_open_box .auth_checked_h2, .auth_open_box .auth_cancheck_h2 {
+    padding: 10px 10px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    text-indent: 12px;
+
+}
+
+.auth_open_box .auth_checked_con {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    line-height: 30px;
+    text-indent: 15px;
+    min-height: 50px;
+    border-bottom: 1px solid #eee;
+    color: #666;
+
+}
+
+.auth_open_box .checkbox {
+    padding: 10px 10px;
+
+}
+
+.auth_open_box .checkbox label {
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    color: #666;
+}
+
+.auth_open_box .checkbox label input {
+    margin: 0px 5px;
+    color: #666;
+}
+
+/* --------　客户信息相关　------------ */
+.container_agerant .select2-container {
+    margin-left: 10px;
+}
+
+.bascBtn > button {
+    display: inline-block;
+    padding: 6px 15px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.selectWrapper {
+    border: none !important;
+    margin-right: 0px;
+}
+
+.selectWrapper select {
+    width: auto;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    line-height: 30px;
+    border-radius: 3px;
+}
+
+.container_agerant .yearSearch {
+    margin-right: 0px;
+}
+
+.container_agerant .selectWrapper {
+    width: auto;
+    padding-right: 5px;
+}
+
+.container_agerant .accountSearch {
+    margin-left: 5px;
+}
+
+.container_agerant .accountSearch .selectWrapper select {
+    width: 300px;
+
+}
+
+/* --------　部门人员列表相关　------------ */
+.staff .staffTop {
+    margin-left: 10px;
+}
+
+.dep_cur {
+    padding-top: 0px;
+    background: #FFE6B0 !important;
+    border: 1px #FFB951 solid;
+    padding: 0px 1px 1px 1px;
+    opacity: 0.8;
+}
+
+.import_box {
+}
+
+.import_box .cfs-upload {
+    padding: 30px 30px;
+}
+
+.import_box .cfs-upload .chk_file {
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 30px;
+    border-radius: 2px;
+    text-indent: 5px;
+}
+
+.import_box .cfs-upload .chk_a {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    background: #f1f1f1;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    color: #333;
+    border: 1px solid #ccc;
+    margin-left: -5px;
+}
+
+.import_box .cfs-upload .cfs_file {
+    width: 100%;
+    height: 30px;
+    align-items: baseline;
+    color: inherit;
+    text-align: start !important;
+    -webkit-appearance: initial;
+    background-color: initial;
+    cursor: default;
+    padding: initial;
+    border: initial;
+    display: none;
+}
+
+.import_box .cfs-upload .m_top20 {
+    margin-top: 20px;
+}
+
+.import_box .cfs-upload .cur {
+    background: #7a8bc2 !important;
+    color: #fff !important;
+    border: 1px solid #7a8bc2 !important;
+}
+
+/* --------　部门人员 批量调整部门　------------ */
+.department_box {
+    padding: 30px 30px;
+}
+
+.department_box .department_list .title {
+    margin-right: 10px;
+}
+
+.department_box .department_list select {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.department_box .department_list select option {
+    height: 26px;
+    line-height: 26px;
+}
+
+/* --------　layer iframe重定义　------------ */
+.layui-layer-iframe iframe {
+    height: auto;
+    min-height: 50px !important;
+}
+
+/* --------　员工添加、编辑下拉样式异常　------------ */
+.staff .staffTotal {
+    z-index: 10 !important;
+    background: #fff;
+}
+
+.staff .documentType {
+    z-index: 20 !important;
+    background: #fff;
+}
+
+/* --------　薪酬弹层　------------ */
+.payrollForm-item .itemRight {
+    width: 191px !important;
+}
+
+.payrollForm-item .itemRight input {
+    text-indent: 10px;
+}
+
+/* --------　薪酬子列表　------------ */
+.payrollEditor .editorFooter {
+    position: fixed !important;
+    background-color: #fff !important;
+}
+
+/*样式覆盖*/
+.container_agerant .accountSearch {
+    margin-left: 0;
+    margin-right: 10px;
+}
+

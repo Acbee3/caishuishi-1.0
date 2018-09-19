@@ -1,0 +1,243 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    /*max-width: 1920px;*/
+}
+
+.header {
+    height: 150px;
+    position: relative;
+}
+
+.header .logo {
+    float: left;
+    height: 101px;
+    width: 223px;
+    background: url("../../common/images/caishuishi_logo.jpg") no-repeat;
+    margin-left: 140px;
+    margin-top: 24px;
+    padding-right:  27px;
+    border-right: 1px solid #c8c8c8;
+    box-sizing: content-box;
+}
+
+.header .welcome_login {
+    height: 101px;
+    width: 109px;
+    background: url("../../common/images/welcome.jpg") no-repeat center center;
+    float: left;
+    margin-top: 24px;
+    margin-left: 22px;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+input {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.middle {
+    width: 100%;
+    height: 600px;
+    /*background: url("../../images/login/login_background.png") no-repeat;*/
+    background-color: #ffa23e;
+    background-size: 100%;
+}
+
+.middle .w {
+    /*background-color: #ccc;*/
+    position: relative;
+    height: 600px;
+    width: 1200px;
+    border: 1px solid transparent;
+}
+
+.middle .introuduce {
+    margin-top: 5%;
+    margin-left: 9%;
+    width: 486px;
+    height: 330px;
+    background-image: url("../../common/images/1.png");
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.middle .introuduce .bgText {
+    position: absolute;
+    bottom: -130px;
+    left: -60px;
+    text-align: center;
+}
+
+.middle .loginWindow {
+    width: 360px;
+    /*height: 400px;*/
+    height: 364px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    /*margin-top: -200px;*/
+    margin-top: -182px;
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+}
+
+.login .loginWindow .header {
+    height: 63px;
+    width: 100%;
+    line-height: 63px;
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px 20px 0 0;
+    /*border-bottom: 1px solid #ccc;*/
+}
+
+.login .loginWindow .header .personal {
+    width: 100%;
+    float: left;
+    border-radius: 20px 20px 0 0;
+    background: url("../../common/images/login_und1.png") no-repeat center bottom;
+}
+
+/*.login .loginWindow .header .enterprise {*/
+    /*width: 50%;*/
+    /*float: left;*/
+    /*border-radius: 0 20px 0 0;*/
+    /*cursor: pointer;*/
+/*}*/
+
+.login .loginWindow .header .active {
+    background-color: #fff;
+    color: #f97d3c;
+}
+
+input::-webkit-input-placeholder {
+    color: #aab2bd;
+}
+
+.login .loginWindow .content {
+    margin-top: 48px;
+}
+
+.login .loginWindow .content > .inputNode {
+    width: 260px;
+    margin-bottom: 38px;
+    margin-left: 50px;
+    height: 34px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+.login .loginWindow .content > .inputNode:focus {
+    border-color: #f97d3c;
+}
+
+.login .loginWindow .content .messageNum {
+    height: 36px;
+    width: 260px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.login .loginWindow .content .messageNum > input {
+    float: left;
+    width: 135px;
+    height: 34px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.login .loginWindow .content .messageNum > a {
+    display: block;
+    float: right;
+    width: 105px;
+    height: 36px;
+    color: #5d5d5d;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.login .loginWindow .content .forget {
+    width: 260px;
+    margin-left: 50px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.login .loginWindow .content .forget > div {
+    float: left;
+    height: 20px;
+    position: relative;
+}
+
+.login .loginWindow .content .forget > div span {
+    position: absolute;
+    width: 100px;
+    top: 0;
+    left: 18px;
+    color: #5d5d5d;
+    font-size: 12px;
+}
+
+.login .loginWindow .content .forget > a {
+    float: right;
+    color: #fd3336;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.login .loginWindow .denglu {
+    height: 36px;
+    margin-left: 50px;
+}
+
+.login .loginWindow .denglu button {
+    height: 36px;
+    line-height: 36px;
+    width: 260px;
+    border-radius: 5px;
+    background-color: #f97d3c;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0px 2px 22px 1px rgba(251,158,109, 0.5);
+}
+
+.login .loginWindow .denglu button:hover {
+    cursor: pointer;
+}
+
+.bottom .rightNum {
+    text-align: center;
+}
+
+.bottom .rightNum.num1 {
+    margin-top: 82px;
+}
+
+.bottom .rightNum.num2 span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../../common/images/gongan.png") no-repeat;
+}

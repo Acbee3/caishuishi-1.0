@@ -1,0 +1,156 @@
+@charset"utf-8";
+.required:before{
+    content: '*';
+    font-size:12px;
+    color:red;
+    width:20px;
+    text-align:center;
+}
+.addProfessWrapper{
+    padding:30px 20px 20px 20px;
+    min-width:1160px;
+}
+.addProfessWrapper>form{
+    padding-top:20px;
+}
+.lineText{
+    width:100%;
+    height:30px;
+    line-height:30px;
+    font-size:14px;
+    border-bottom:2px solid #568bfb;
+}
+.addLine{
+    margin-bottom:20px;
+}
+.addLine:after{
+    display:block;
+    content:'';
+    clear:both;
+}
+.addLine>div{
+    float:left;
+    margin-left:20px;
+}
+.addLine label{
+    display: inline-block;
+    width: 134px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    vertical-align: top;
+}
+.addLine input{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-indent: 10px;
+    margin-left: 10px;
+}
+.addLine .staff{
+    display:inline-block;
+    vertical-align:top;
+    width:200px;
+    height:30px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    position:relative;
+    margin-left:10px;
+}
+.staff .staffTotal{
+    position:relative;
+    width:100%;
+    height:100%;
+    line-height:30px;
+    border-radius: 4px;
+}
+.staff .staffTotal .icon-xialazhishijiantou{
+    display:inline-block;
+    width:30px;
+    height:28px;
+    line-height:28px;
+    text-align: center;
+    /*border-left:1px solid #ccc;*/
+    position:absolute;
+    right:0;
+    cursor:pointer;
+    color:#797979;
+    font-size: 12px;
+}
+.staff .staffTotal .icon-xialazhishijiantou{
+    background:#fff;
+    border-radius: 0 4px 4px 0;
+}
+.staff .documentType{
+    background:#fff;
+    border:1px solid #ccc;
+    padding:10px 0;
+    position:absolute;
+    z-index:99;
+    left:0;
+    top:32px;
+    width:100%;
+}
+.staff .documentType li{
+    cursor:pointer;
+    line-height:26px;
+    text-indent:6px;
+}
+.staff .documentType li:hover{
+    background:#eee;
+}
+.lineRight .staffDate{
+    width:200px;
+    height:30px;
+    border:1px solid #ccc;
+    display:inline-block;
+    vertical-align:top;
+    position:relative;
+    margin-left:10px;
+    border-radius:4px;
+}
+.lineRight .staffDate input{
+    width:168px;
+    height:28px;
+    margin-left:0;
+    border:none;
+}
+.lineRight .staffDate .iconfont{
+    position:absolute;
+    right:0;
+    top:0;
+    display:inline-block;
+    width:30px;
+    height:28px;
+    text-align:center;
+    line-height: 28px;
+    color:#f97d3c;
+    /*border-left:1px solid #ccc;*/
+    cursor:pointer;
+}
+.lineRight .staffDate .iconfont:hover{
+    background:#eee;
+}
+/*-------按钮------*/
+.newStaff-btn{
+    text-align: center;
+}
+.newStaff-btn a{
+    display:inline-block;
+    height: 30px;
+    line-height:30px;
+    border-radius:4px;
+    padding:0 12px;
+    font-size:14px;
+    color:#fff;
+    margin-right:15px;
+}
+.newStaff-btn a.keepBtn{
+    background:#49b18d;
+}
+.newStaff-btn a.cancleBtn{
+    background: #fff;
+    color: #ff5757;
+    border: 1px solid #ffa5a5;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/theme-chalk/index.css">
+    <!--侧边栏-->
+    <link rel="stylesheet" href="../../common/css/slider.css">
+</head>
+<body>
+<div id="app">
+    <div class="sidebar">
+        <el-menu class="sidebar-el-menu" background-color="#ffffff"
+                 text-color="#bfcbd9" active-text-color="#20a0ff">
+            <template v-for="item in date">
+                <div class="topTitle">
+                    <i></i>
+                    <span>{{item.name}}</span>
+                </div>
+                <el-menu>
+                    <template v-for="title in item.items">
+                        <template v-if="title.subs">
+                            <el-submenu :index="title.index" :key="title.index">
+                                <template slot="title">
+                                    <i :class="title.icon"></i><span slot="title">{{ title.title }}-{{title.index}}</span>
+                                </template>
+                                <el-menu-item v-for="(subItem,i) in title.subs" :key="i" :index="subItem.index">
+                                    {{ subItem.title }}-{{subItem.index}}
+                                </el-menu-item>
+                            </el-submenu>
+                        </template>
+                        <template v-else>
+                            <el-menu-item :index="title.index" :key="title.index">
+                                <i :class="title.icon"></i><span slot="title">{{ title.title }}-{{title.index}}</span>
+                            </el-menu-item>
+                        </template>
+                    </template>
+                </el-menu>
+            </template>
+        </el-menu>
+    </div>
+</div>
+<!--<script src="../../common/js/vue.min.js"></script>-->
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
+<script src="../../common/js/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+           return {
+               item: 'hello',
+               collapse: false,
+               date: [
+                   {
+                       name: '清单处理',
+                       items: [
+                           {
+                               icon: 'el-icon-setting',
+                               index: '1',
+                               title: '发票',
+                               subs: [
+                                   {
+                                       index: '/money/jinZhang',
+                                       title: '进账'
+                                   },
+                                   {
+                                       index: '/money/xiaoxiang',
+                                       title: '销项'
+                                   },
+                                   {
+                                       index: '/money/feiyong',
+                                       title: '费用'
+                                   },
+                                   {
+                                       index: '/money/invoice',
+                                       title: '发票'
+                                   }
+                               ]
+                           },
+                           {
+                               icon: 'el-icon-setting',
+                               index: '2',
+                               title: '资金',
+                               subs: [
+                                   {
+                                       index: 'form',
+                                       title: '银行'
+                                   },
+                                   {
+                                       index: 'editor',
+                                       title: '现金'
+                                   },
+                                   {
+                                       index: 'markdown',
+                                       title: '发票'
+                                   }
+                               ]
+                           }
+                       ]
+                   },
+                   {
+                       name: '财务处理',
+                       items: [
+                           {
+                               icon: 'el-icon-setting',
+                               index: '/money/pingzheng',
+                               title: '凭证'
+                           },
+                           {
+                               icon: 'el-icon-setting',
+                               index: '3',
+                               title: '账簿',
+                               subs: [
+                                   {
+                                       index: 'form',
+                                       title: '科目余额'
+                                   },
+                                   {
+                                       index: 'editor',
+                                       title: '总账'
+                                   },
+                                   {
+                                       index: 'markdown',
+                                       title: '明细账'
+                                   }
+                               ]
+                           },
+                           {
+                               icon: 'el-icon-setting',
+                               index: 'dashboard',
+                               title: '结账'
+                           }
+                       ]
+                   },
+                   {
+                       name: '财务处理2',
+                       items: [
+                           {
+                               icon: 'el-icon-setting',
+                               index: 'pingzheng1',
+                               title: '凭证'
+                           },
+                           {
+                               icon: 'el-icon-setting',
+                               index: '4',
+                               title: '账簿',
+                               subs: [
+                                   {
+                                       index: 'form1',
+                                       title: '科目余额'
+                                   },
+                                   {
+                                       index: 'editor1',
+                                       title: '总账'
+                                   },
+                                   {
+                                       index: 'markdown1',
+                                       title: '明细账'
+                                   }
+                               ]
+                           },
+                           {
+                               icon: 'el-icon-setting',
+                               index: 'dashboard1',
+                               title: '结账'
+                           }
+                       ]
+                   }
+               ]
+           }
+        }
+    })
+</script>
+</body>
+</html>

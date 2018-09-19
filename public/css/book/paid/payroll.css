@@ -1,0 +1,186 @@
+@charset"utf-8";
+.payrollWrapper{
+    padding:20px 0;
+}
+/*----payroll----*/
+.payrollTableHead thead{
+    background:#cecece;
+}
+.payrollTableHead thead tr{
+    height:36px;
+}
+.payrollTableHead thead tr th{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#adadad;
+    color: #3d3d3d;
+    font-weight: bold;
+}
+/*-----payrollTop----*/
+.payrollTop{
+    height:40px;
+    width:100%;
+    padding:0 20px;
+}
+.payrollTop .payrollCopy{
+    float:right;
+    /*font-size: 0;*/
+}
+.payrollTop .payrollCopy a {
+    float: left;
+    background:#f97d3c;
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    padding:0 10px;
+    border-radius:4px;
+    margin-left: 20px;
+    color:#fff;
+}
+
+.payrollTop .payrollCopy .add {
+    background-color: #49b18d;
+}
+
+/*--------payrollTableCenter---*/
+.payrollTableCenter tr{
+    height:36px;
+}
+.payrollTableCenter tr td{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#ccc;
+}
+.payrollTableCenter tr td i{
+    cursor:pointer;
+    font-size:18px;
+    color:#f97d3c;
+}
+
+.payrollTableCenter tr td .iconEdit {
+    color: #49b18d;
+}
+
+.payrollTableCenter tr td .del{
+    color:#ff5757;
+}
+/*-----新增弹框的form-----*/
+.payrollForm{
+    padding:20px 0;
+}
+.payrollForm-item{
+    margin-bottom:14px;
+}
+.layui-form-select{
+    display:inline-block;
+    border-radius: 4px;
+}
+.layui-form-select dl{
+    top:30px;
+}
+.payrollForm .payrollLabel{
+    display:inline-block;
+    text-align: right;
+    width:120px;
+    margin-right:10px;
+}
+.payrollForm .layui-input{
+    height:30px;
+    border-radius: 4px;
+}
+.payrollForm .layui-form-select dl dd{
+    line-height:20px;
+    font-size:12px;
+}
+.payrollForm .layui-form-select dl dd.layui-this{
+    background:#fff;
+    color: #f97d3c;
+}
+
+#copy_monthShow .iconfont, #to_monthShow .iconfont {
+    color: #f97d3c;
+}
+
+.fzxc-content .layui-form-select .layui-anim dd.layui-this {
+    background-color: #fff;
+    color: #f97d3c;
+}
+
+.fzxc-content .layui-form-select .layui-anim dd:hover {
+    background-color: #eee;
+}
+
+.payrollForm .layui-form-select dl dd:hover {
+    background-color: #eee;
+}
+.payrollForm-item .itemRight{
+    display:inline-block;
+    border:1px solid #ccc;
+    width:196px!important;
+    height:30px;
+    border-radius:4px;
+    position:relative;
+}
+.payrollForm-item .itemRight input{
+    border:none;
+    border-radius:4px;
+    width:100%;
+    height:100%;
+}
+.payrollForm-item .itemRight .iconfont{
+    display:inline-block;
+    width:26px;
+    height:28px;
+    line-height:28px;
+    text-align: center;
+    position:absolute;
+    right:0;
+    top:0;
+    cursor:pointer;
+    /*border-left:1px solid #ccc;*/
+    color:#ccc;
+    font-size: 12px;
+    border-radius: 0 4px 4px 0;
+    background:#fff;
+}
+/*-----个体所得税独有---*/
+.productMenu,.zcMoney_1,.moneyDisabled{
+    display:none;
+}
+
+.layui-layer {
+    border-radius: 4px!important;
+}
+.layui-layer-title {
+    background:#f97d3c !important;
+    color:#fff !important;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+    background-color: #f97d3c!important;
+    border-radius: 4px;
+    border: none;
+}
+
+.layui-layer-btn .layui-layer-btn1 {
+    border-radius: 4px !important;
+    border-color: #ffa5a5 !important;
+    color: #ff5757 !important;
+}
+
+.layui-layer-btn a {
+    height: 30px!important;
+    line-height: 30px!important;
+    margin: 5px 10px 0px!important;
+}
+
+.layui-layer-setwin .layui-layer-close1 {
+    background-position: -87px -39px!important;
+}
+/*样式添加或覆盖*/
+.fs0{
+    font-size: 0;
+}
+.payrollTableCenter tr td i{
+    margin-right: 15px;
+}

@@ -1,0 +1,103 @@
+@charset"utf-8";
+.zcType{
+    margin:12px 0;
+    padding:0 10px;
+    height:30px;
+}
+.zcType .zcType-item{
+    margin-right:10px;
+    float:left;
+}
+.zcType .zcBtn{
+    float:right;
+}
+.zcType .zcBtn>a{
+    display:inline-block;
+    padding:0 10px;
+    background:#25a1f8;
+    color:#fff;
+    border-radius:4px;
+    height:30px;
+    line-height:30px;
+}
+.zcType .zcType-item> span{
+    display:inline-block;
+    width:80px;
+    height:30px;
+    line-height:30px;
+    float:left;
+}
+.zcType .zcType-item .selectZc{
+    float:left;
+    width:180px;
+    height:30px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    position:relative;
+}
+.zcType-item .selectHead{
+    font-size:0;
+}
+.zcType-item .showZc{
+    position:absolute;
+    width:100%;
+    background:#fff;
+    border: 1px solid #ccc;
+    top:28px;
+    left:0;
+    z-index:99;
+    max-height: 200px;
+    overflow: auto;
+}
+.zcType-item .showZc li{
+    line-height:22px;
+    cursor:pointer;
+    text-indent: 4px;
+}
+.zcType-item .showZc li:hover{
+    background:#eee;
+}
+.zcType-item .selectHead .zcTop{
+    display:inline-block;
+    width:148px;
+    height:30px;
+    line-height:30px;
+    font-size:12px;
+    text-indent: 6px;
+}
+.zcType-item .selectHead .icon-xialazhishijiantou{
+    display:inline-block;
+    color:#ccc;
+    /*border-left:1px solid #ccc;*/
+    width:30px;
+    font-size: 12px;
+    height:28px;
+    text-align:center;
+    line-height:28px;
+    vertical-align: top;
+    cursor:pointer;
+}
+.zcType-item .selectHead .icon-xialazhishijiantou:hover{
+    background:#eee;
+}
+/*----资产table-------head-body---*/
+.zcTableHead table thead tr{
+    background:#cecece;
+    height:36px;
+    color:#3d3d3d;
+}
+.zcTableHead table thead tr th{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#adadad;
+}
+.zcTableBody tr{
+    height:36px;
+    line-height:36px;
+}
+.zcTableBody tr td{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#ccc;
+    color:#333;
+}

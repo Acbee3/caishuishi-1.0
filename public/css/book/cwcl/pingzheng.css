@@ -1,0 +1,405 @@
+@charset "utf-8";
+.textL {
+    text-align: left;
+}
+
+.textR {
+    text-align: right;
+}
+
+.financeInvoice{
+    padding:12px 0;
+}
+/*----财务处理-凭证----输入框-------*/
+.financeInvoice .formWrapper{
+    padding:0 10px;
+    height: 30px;
+    margin-bottom: 12px;
+}
+.financeInvoice .formWrapper:after{
+    display:block;
+    content: '';
+    clear:both;
+}
+.financeInvoice .formWrapper .financeForm{
+    float:left;
+}
+.financeLeft{
+    position:relative;
+}
+.financeLeft>div{
+    float:left;
+    height:30px;
+    margin-right:20px;
+}
+.financeLeft .finance-item{
+    width:120px;
+}
+.financeLeft .finance-itemA{
+    float:left;
+}
+.financeLeft .finance-itemA .searchLy{
+    display:inline-block;
+    vertical-align: top;
+    height:30px;
+    line-height:30px;
+    border-radius:4px;
+    background:#f97d3c;
+    color:#fff;
+    padding:0 10px;
+}
+.financeLeft .finance-itemA .ly{
+    width:200px;
+    display:inline-block;
+    margin-right:20px;
+}
+.financeLeft .finance-itemA .ly .layui-input{
+    height:30px;
+    border-radius:4px;
+}
+.financeLeft>div .layui-input{
+    height:30px;
+    border-radius: 4px;
+}
+.financeLeft .finance-itemB{
+    position:relative;
+    border:1px solid #f97d3c;
+    width:210px;
+    height:30px;
+    border-radius: 4px;
+    font-size:0;
+}
+.financeLeft .finance-itemB .bm,.financeLeft .finance-itemD .bm{
+    display:inline-block;
+    width:64px;
+    height:28px;
+    line-height:28px;
+    background:#f97d3c;
+    border-radius:0 4px 4px 0;
+    color:#fff;
+    font-size:12px;
+    text-align: center;
+    cursor: pointer;
+}
+.financeLeft .finance-itemB input,.finance-itemD>input{
+    width:144px;
+    height:28px;
+    border:none;
+    border-radius:4px 0 0 4px;
+    vertical-align: top;
+    font-size:12px;
+    text-indent: 8px;
+}
+.finance-itemD>input{
+    background:#ccc;
+}
+.financeLeft .finance-itemB .iconfont,.finance-itemD .icon-search{
+    position:absolute;
+    right:0;
+    top:0;
+    display:inline-block;
+    width:24px;
+    height:28px;
+    text-align: center;
+    line-height:28px;
+    cursor:pointer;
+}
+.finance-itemC input{
+    height:30px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    width:80px;
+    padding-left: 10px;
+}
+.finance-itemD{
+    width:210px;
+    border:1px solid #f97d3c;
+    position:relative;
+    border-radius: 4px;
+    font-size:0;
+}
+.finance-itemC .search{
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    color:#fff;
+    padding:0 12px;
+    background:#25a1f8;
+    border-radius:4px;
+    margin-left: 16px;
+}
+.financeInvoice .formWrapper .financeRight{
+    float:right;
+}
+/*------左侧更多下面的form------*/
+.myForm{
+    position:absolute;
+    width:418px;
+    left:0;
+    top:30px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    background:#fff;
+    z-index:99;
+    padding:20px 20px 15px 20px;
+    box-sizing: border-box;
+}
+.myForm .more-item label{
+    display:inline-block;
+    width:100px;
+    height:30px;
+    line-height:30px;
+    margin-right:10px;
+    vertical-align:top;
+    font-size:14px;
+}
+.myForm .more-item{
+    font-size:0;
+    margin-bottom:20px;
+}
+.myForm .more-item>div{
+    display:inline-block;
+    font-size:14px;
+}
+.myForm .more-item>div .pzItem{
+    float:left;
+    width:112px;
+    height:30px;
+    margin-right:10px;
+    border-radius:2px;
+}
+.myForm .more-item>div .pzItemC{
+    float:left;
+    width:16px;
+    height:30px;
+}
+.myForm .more-item>div .pzly-item{
+    width:250px;
+    border-radius:2px;
+}
+.myForm .more-item> .km-border{
+    position:relative;
+    border:1px solid #ccc;
+    width:250px;
+    height:30px;
+    border-radius:4px;
+}
+.myForm .more-item> .km-border>input{
+    width:224px;
+    height:28px;
+    border:none;
+    text-indent: 4px;
+    padding-left: 10px;
+    border-radius: 4px 0 0 4px;
+}
+.myForm .more-item> .km-border>.iconfont{
+    display:inline-block;
+    width:24px;
+    height:30px;
+    text-align: center;
+    line-height:30px;
+    cursor:pointer;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.myForm .more-item>.pzh-item{
+    width:250px;
+    font-size:0;
+}
+.myForm .more-item>.pzh-item>input{
+    width:100px;
+    height:30px;
+    border:1px solid #ccc;
+    vertical-align: top;
+    font-size:14px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+.myForm .more-item>.pzh-item>span{
+    display:inline-block;
+    width:50px;
+    height:30px;
+    line-height:30px;
+    font-size:14px;
+    text-align: center;
+}
+.myForm .more-item .zy{
+    width:250px;
+    height:30px;
+}
+.myForm .more-item .zy input{
+    width:250px;
+    height:30px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    padding-left: 10px;
+}
+.myForm .more-item .layui-select-title>input{
+    height:30px;
+    line-height:30px;
+    border-radius: 4px;
+}
+.myForm .more-itemBtn{
+    text-align: right;
+}
+.myForm .more-itemBtn>a{
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    padding:0 10px;
+    border-radius:4px;
+    /*background:#568bfb;*/
+    color:#fff;
+    font-size:14px;
+    margin-right: 20px;
+}
+.myForm .more-itemBtn>a.reset {
+    background-color: #25a1f8;
+}
+
+.myForm .more-itemBtn>a.searchBtn {
+    background-color: #f97d3c;
+}
+/*---头部右侧按钮-----*/
+.financeRight{
+    font-size:0;
+}
+.financeRight>a{
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    color:#fff;
+    padding:0 10px;
+    border-radius:4px;
+    font-size:14px;
+    margin-right:20px;
+}
+.financeRight>a.addBtn{
+    background:#24b482;
+}
+.financeRight>a.delBtn{
+    background:#fff;
+    border: 1px solid #ffa5a5;
+    color: #ff5757;
+}
+.financeRight>a.printBtn {
+    background-color: #25a1f8;
+}
+.financeRight .moreBtn{
+    display:inline-block;
+    width:100px;
+    height:30px;
+    line-height:30px;
+    color:#747474;
+    padding:0 10px;
+    font-size:14px;
+    background:#fff;
+    border-radius:4px;
+    border: 1px solid #cecece;
+    vertical-align:top;
+    cursor:pointer;
+    position:relative;
+}
+.financeRight .moreBtn .tips .iconfont{
+    float:right;
+    font-size:14px;
+}
+.financeRight .moreBtn .moreList{
+    position:absolute;
+    left:0;
+    top:30px;
+    width:100px;
+    background:#fff;
+    border:1px solid #ccc;
+    border-radius:4px;
+    display:none;
+}
+.financeRight .moreBtn:hover .moreList{
+    display: block;
+}
+.financeRight .moreBtn .moreList li{
+    height:24px;
+    line-height:24px;
+    color:#000;
+    cursor:pointer;
+    padding:0 10px;
+}
+.financeRight .moreBtn .moreList li:hover{
+    background:#eee;
+}
+.financeLeft .layui-form-select dl {
+    top: 28px;
+}
+.financeLeft .layui-form-select dl dd.layui-this{
+    background:#fff;
+    font-size:14px;
+    color: #f97d3c
+}
+.financeLeft .layui-form-select dl dd{
+    line-height:26px;
+}
+/*----弹窗的样式----*/
+.pzAleart .layui-layer-title{
+    padding:0 20px 0 22px;
+    color:#fff;
+    font-weight:bold;
+    background:#f97d3c;
+}
+.pzAleart .layui-layer-content div{
+    line-height:30px;
+    padding:10px 0 0 15px;
+}
+.pzAleart .layui-layer-btn .layui-layer-btn0{
+    margin:5px 20px 0;
+    padding:0 10px;
+    border-radius:4px;
+    background:#f97d3c;
+    border-color:#f97d3c;
+}
+.pzAleart .layui-layer-setwin .layui-layer-close1{
+    background-position: -87px -39px;
+}
+/*-------financeTable-head-----表格table*/
+.financeTable{
+    padding:0 10px;
+}
+.financeTable-head tr{
+    height:36px;
+    line-height:36px;
+    background:#cecece;
+}
+.financeTable-head tr th{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#adadad;
+}
+.financeTable-body tr td{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#ccc;
+}
+.financeTable-body tr td .marksNum{
+    color:#f97d3c;
+    cursor:pointer;
+    font-weight: bold;
+}
+.financeTable-body tr td .marksNum:hover{
+    text-decoration: underline;
+}
+.financeTable-body tr td p{
+    height:30px;
+    line-height:30px;
+    border-bottom:1px dotted #ccc;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 5px;
+}
+.financeTable-body tr td p:last-child{
+    border:none;
+}
+/*样式添加或覆盖*/
+.financeTable-head tr th{
+    color:#3d3d3d ;
+}

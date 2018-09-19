@@ -1,0 +1,489 @@
+@charset"utf-8";
+/*----------此css用到的页面是科目余额-总账-明细账---*/
+.subjectBalance,.generalLedger{
+    padding:12px 20px;
+}
+/*----顶部查找框-----*/
+.subjectLeft{
+    float:left;
+    height:44px;
+}
+.subjectLeft>div{
+    float:left;
+    margin-right:20px;
+    border-radius:4px;
+}
+.subjectLeft .subject-item{
+    width:126px;
+    height:30px;
+}
+.subjectLeft .subject-item .layui-select-title>input{
+    height:30px;
+    line-height:30px;
+    color:#333;
+}
+.subjectLeft .layui-form-select dl dd.layui-this{
+    background:inherit;
+    line-height:26px;
+    color:#f97d3c;
+}
+.subjectLeft .layui-form-select dl{
+    top:32px;
+}
+.subjectData-item{
+    position:relative;
+}
+.subjectData-item .subjectForm{
+    position:absolute;
+    width:400px;
+    border:1px solid #ccc;
+    background:#fff;
+    z-index:99;
+}
+.subjectForm{
+    padding:20px 10px;
+}
+.subjectForm .form-item{
+    font-size:0;
+    margin-bottom:16px;
+}
+.subjectForm .form-item label{
+    display:inline-block;
+    width:100px;
+    height:30px;
+    line-height:30px;
+    vertical-align:top;
+    font-size:14px;
+    margin-right:10px;
+}
+.subjectForm .form-item >div{
+    display:inline-block;
+    vertical-align:top;
+    font-size:14px;
+}
+.subjectForm .form-item .kjqj >div{
+    float:left;
+}
+.subjectForm .form-item .kjqj >div.kmyeItem{
+    width:120px;
+    height:30px;
+    position:relative;
+}
+.subjectForm .form-item .kjqj >div.kmyeItemC{
+    width:20px;
+    height:30px;
+    line-height:30px;
+    text-align: center;
+}
+.subjectForm .form-item .kmStart{
+    width:260px;
+    height:30px;
+    line-height:30px;
+    border:1px solid #ccc;
+    border-radius:2px;
+    position:relative;
+}
+.subjectForm .form-item .kmStart>input{
+    width:230px;
+    height:26px;
+    border:none;
+}
+.subjectForm .form-item .kmStart .iconfont{
+    position:absolute;
+    display:inline-block;
+    width:26px;
+    height:30px;
+    top:0;
+    right:0;
+    cursor:pointer;
+}
+.kmyeItem .layui-select-title>input{
+    line-height:30px;
+    height:30px;
+}
+.kmyeItem .layui-form-select dl dd{
+    line-height:30px;
+}
+.subjectLeft .subjectData{
+    position:relative;
+    /*width:126px;*/
+    height:30px;
+    border:1px solid #ccc;
+    border-radius:2px;
+    font-size:0;
+    padding:0 10px;
+}
+.subjectLeft .subjectData .text{
+    display:inline-block;
+    /*width:126px;*/
+    height:30px;
+    line-height:30px;
+    text-align: center;
+    font-size:14px;
+    color:#333;
+}
+.subjectLeft .subjectData .iconfont{
+    /*position:absolute;*/
+    display:inline-block;
+    width:26px;
+    height:30px;
+    text-align: center;
+    line-height:30px;
+    cursor:pointer;
+}
+.subjectLeft .downTip{
+    color:#bebebe;
+    font-size:12px;
+}
+.subjectRefresh{
+    width:40px;
+    height:30px;
+    border:1px solid #ccc;
+    border-radius:2px;
+    text-align: center;
+    line-height:30px;
+    cursor:pointer;
+}
+.subjectRefresh .iconfont{
+    font-size:18px;
+}
+.kmjc>input{
+    width:80px;
+    height:30px;
+}
+.bibie{
+    position:relative;
+    width:180px;
+    height:30px;
+    border:1px solid #ccc;
+    border-radius:2px;
+}
+.bibie .selectKmye{
+    height:30px;
+    line-height:30px;
+    color:#333;
+    position:relative;
+}
+.selectKmye .titleTop{
+    padding-left:4px;
+    color:#333;
+}
+.bibie .showKmye{
+    position:absolute;
+    left:0;
+    top:32px;
+    z-index: 99;
+    background:#fff;
+    width:100%;
+    border:1px solid #ccc;
+    border-radius:2px;
+    height:200px;
+    overflow-y: scroll;
+}
+.bibie .showKmye li{
+    height:26px;
+    line-height:26px;
+    cursor:pointer;
+    padding-left:4px;
+}
+.bibie .showKmye li:hover{
+    background:#feba56;
+}
+.bibie .selectKmye .iconfont{
+    position:absolute;
+    top:0;
+    right:4px;
+    cursor:pointer;
+}
+.bibie .layui-select-title input{
+    height:30px;
+    line-height:30px;
+}
+.subjectBtn{
+    text-align: right;
+}
+.subjectBtn>a{
+    display:inline-block;
+    padding:0 12px;
+    border-radius:2px;
+    height:30px;
+    line-height:30px;
+}
+.subjectBtn>a.resetBtn{
+    border:1px solid #ccc;
+}
+.subjectBtn>a.sureBtn{
+    background:#f97d3c;
+    color:#fff;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.hiddenYear a{
+    display:inline-block;
+    height: 30px;
+    line-height:30px;
+    padding:0 10px;
+    background:#568bfb;
+    border-radius:2px;
+    color:#fff;
+}
+/*-----顶部右侧---*/
+.subjectRight{
+    height:36px;
+    float:right;
+}
+.subjectRight>a{
+    display:inline-block;
+    padding:0 12px;
+    height:30px;
+    line-height:30px;
+    border-radius:4px;
+    color:#fff;
+    font-size:14px;
+    margin-right:10px;
+}
+
+.subjectRight .export{
+    background:#24b482;
+}
+.subjectRight .print{
+    background:#568bfb;
+}
+/*------------table----------*/
+.subjectTableHead tr{
+    height:40px;
+    line-height:40px;
+    background:#cecece;
+    font-size:14px;
+}
+.subjectTableHead tr td{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#adadad;
+    color:#3d3d3d;
+    font-weight:800;
+}
+.subjectTableBody tr td{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#ccc;
+}
+.subjectTableBody tr td .keCode{
+    color:#568bfb;
+    font-weight:800;
+}
+.subjectTableBody tr td .keCode:hover{
+    text-decoration: underline;
+}
+.subjectTableBody tr td:nth-child(1),.subjectTableBody tr td:nth-child(2){
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left:4px;
+}
+.subjectTableBody tr{
+    height:40px;
+    line-height:40px;
+}
+/*--------subjectType---------弹窗选择科目--------*/
+.subjectTitle li{
+    height:36px;
+    line-height:36px;
+    padding: 0 26px;
+    float:left;
+    cursor:pointer;
+}
+.subjectTitle:after{
+    display:block;
+    content: '';
+    clear:both;
+}
+.subjectTitle li.curActive{
+    background:#ccc;
+    font-weight: 800;
+}
+/*---------------会计期间的下拉框-----------*/
+.kmyeItem .selectKmye{
+    height:30px;
+    line-height:30px;
+    border:1px solid #ccc;
+    padding-left:4px;
+}
+.kmyeItem .showKmye{
+    position:absolute;
+    left:0;
+    top:32px;
+    width:100%;
+    height:210px;
+    overflow-y: scroll;
+    background:#fff;
+    border:1px solid #ccc;
+    z-index: 99;
+}
+.kmyeItem .showKmye li{
+    cursor:pointer;
+    line-height:26px;
+    color:#333;
+}
+.kmyeItem .selectKmye .iconfont{
+    position:absolute;
+    top:0;
+    right:4px;
+    color:#ccc;
+}
+.kmyeItem .showKmye li:hover{
+    background:#eee;
+}
+/*----------------------------账簿里的------总账------*/
+.subjectLeft .totalText{
+    height:30px;
+    line-height:30px;
+    font-size:14px;
+    font-weight:800;
+    color:#000;
+}
+.ledgerTableHead table tr{
+    height:40px;
+    line-height:40px;
+    color:#3d3d3d;
+    font-size:14px;
+    background:#cecece;
+    font-weight:bold;
+}
+.ledgerTableHead table tr th{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#adadad;
+}
+.ledgerTableBody table tr td{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#ccc;
+}
+.ledgerTableBody table tr td:first-child{
+    color:#425772;
+}
+.ledgerTableBody table tr td p{
+    height:40px;
+    line-height:40px;
+    border-bottom:1px dotted #ccc;
+}
+.ledgerTableBody table tr td p:last-child{
+    border:none;
+}
+/*--------总账导出弹窗-----------*/
+.ledgerAlert .layui-layer-title{
+    padding:0 20px 0 22px;
+    background:#f97d3c;
+    color:#fff;
+    font-weight:bold;
+}
+.ledgerAlert .layui-layer-btn .layui-layer-btn0{
+    background:#f97d3c;
+    padding:0 10px;
+    margin:5px 20px 0;
+    border-color:#f97d3c;
+}
+.ledgerAlert .layui-layer-btn .layui-layer-btn1{
+    padding:0 10px;
+    margin:5px 0 0;
+}
+.ledgerAlert .layui-layer-setwin .layui-layer-close1{
+    background-position: -87px -39px;
+}
+/*------------明细账---------*/
+.mxzTop{
+    height:44px;
+}
+#mxz{
+    position:relative;
+}
+.contentWrapper{
+    position:absolute;
+}
+.contentWrapper .text{
+    font-size:16px;
+    color:#f97d3c;
+    height:36px;
+    line-height:36px;
+    padding-left:10px;
+}
+.contentWrapper .textBorder{
+    border-width:1px 1px 0 1px;
+    border-style:solid;
+    border-color:#ccc;
+}
+.contentWrapper .rTree{
+    position:absolute;
+    right:0;
+    top:0;
+    width:246px;
+    border:1px solid #ccc;
+}
+.contentWrapper .mxzTable{
+    margin-right:256px;
+}
+.mxzTableHead tr{
+    height:40px;
+    line-height:40px;
+    background:#cecece;
+}
+
+.mxzTableHead tr th {
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#adadad;
+}
+.mxzTableBody tr td{
+    border-width:0 1px 1px 1px;
+    border-style:dotted;
+    border-color:#ccc;
+}
+.mxzTableBody tr td{
+    height:40px;
+    line-height:40px;
+}
+/*-------------明细账右侧的tree-----------*/
+.mxzForm{
+    width:230px;
+    margin:0 auto;
+}
+.mxzForm .layui-select-title>input{
+    height:32px;
+}
+.mxzForm .layui-form-select dl dd.layui-this{
+    background:#ecac33;
+}
+.mxzForm .layui-form-select dl dd{
+    line-height:26px;
+}
+
+.layui-layer-title {
+    background:#f97d3c !important;
+    color:#fff !important;
+}
+.layui-layer-setwin .layui-layer-close1 {
+    background-position: -87px -39px!important;
+}
+/*样式覆盖或者添加*/
+.subjectLeft .subjectData{
+    border-radius:4px;
+    border: 1px solid #cfcfcf;
+}
+.subjectLeft .subject-item .layui-select-title>input {
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+}
+.hiddenYear a{
+    border-radius: 4px;
+}
+.mxzTableHead tr th{
+    color:#3d3d3d;
+}
+.mxzTableBody tr td b{
+    color:#3d3d3d;
+}
+.subjectLeft .totalText{
+    color: #f97d3c;
+}

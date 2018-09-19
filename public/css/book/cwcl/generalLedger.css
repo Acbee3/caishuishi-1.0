@@ -1,0 +1,95 @@
+@charset"utf-8";
+.generalLedger{
+    padding:15px 10px;
+}
+/*----顶部查找框-----*/
+.subjectLeft{
+    float:left;
+    height:36px;
+}
+.subjectLeft>div{
+    float:left;
+    margin-right:10px;
+}
+.subjectLeft .subject-item{
+    width:180px;
+    height:30px;
+}
+.subjectLeft .subject-item .layui-select-title>input{
+    height:30px;
+    line-height:30px;
+}
+.subjectLeft .layui-form-select dl dd.layui-this{
+    background:#feba56;
+    line-height:26px;
+}
+.subjectLeft .layui-form-select dl{
+    top:32px;
+}
+.subjectData-item{
+    position:relative;
+}
+.subjectData-item .subjectForm{
+    position:absolute;
+    width:400px;
+    border:1px solid #ccc;
+    background:#fff;
+    z-index:99;
+}
+.subjectForm{
+    padding:20px 10px;
+}
+.subjectForm .form-item{
+    font-size:0;
+    margin-bottom:16px;
+}
+.subjectForm .form-item label{
+    display:inline-block;
+    width:100px;
+    height:30px;
+    line-height:30px;
+    vertical-align:top;
+    font-size:14px;
+    margin-right:10px;
+}
+.subjectForm .form-item >div{
+    display:inline-block;
+    vertical-align:top;
+    font-size:14px;
+}
+.subjectForm .form-item .kjqj >div{
+    float:left;
+}
+.subjectForm .form-item .kjqj >div.kmyeItem{
+    width:120px;
+    height:30px;
+    position:relative;
+}
+.subjectForm .form-item .kjqj >div.kmyeItemC{
+    width:20px;
+    height:30px;
+    line-height:30px;
+    text-align: center;
+}
+.subjectForm .form-item .kmStart{
+    width:260px;
+    height:30px;
+    line-height:30px;
+    border:1px solid #ccc;
+    border-radius:2px;
+    position:relative;
+}
+.subjectForm .form-item .kmStart>input{
+    width:230px;
+    height:26px;
+    border:none;
+}
+.subjectForm .form-item .kmStart .iconfont{
+    position:absolute;
+    display:inline-block;
+    width:26px;
+    height:30px;
+    top:0;
+    right:0;
+    cursor:pointer;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>客户列表</title>
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="../common/fonts/iconfont.css">
+    <link rel="stylesheet" href="../common/layui/css/layui.css">
+    <link rel="stylesheet" href="../common/css/header.css">
+    <link rel="stylesheet" href="../common/css/table.css">
+    <link rel="stylesheet" href="./css/customer.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <!--[if lt IE 9]>
+    <script src="../common/js/html5shiv.min.js"></script>
+    <script src="../common/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="app">
+    <div class="header">
+        <div class="headerTop">
+            <div class="headerLeft">
+                <img src="../common/images/logoLitter.png" alt="logo">
+            </div>
+            <div class="headerRight">
+                <div class="header-item">
+                    <i><img src="../common/images/company.png" alt="company"></i>
+                    <span>苏州财税狮网络科技有限公司</span>
+                </div>
+                <div class="header-item">
+                    <i><img src="../common/images/notes.png" alt="company"></i>
+                    <span>通知公告</span>
+                </div>
+                <div class="header-item">
+                    <i><img src="../common/images/personalcenter.png" alt="company"></i>
+                    <span>用户名</span>
+                </div>
+            </div>
+        </div>
+        <div class="tab">
+            <ul class="tabList">
+                <li class="activeBg">首页</li>
+                <li>客户信息</li>
+                <li>
+                    基础设置
+                    <ul class="showList" style="display: none">
+                        <li>角色权限</li>
+                        <li>部门人员</li>
+                        <li>客户授权</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="customerWrapper">
+        <div class="customerTop">
+            <ul class="list">
+                <li class="listActive">客户列表</li>
+                <li>停用列表</li>
+            </ul>
+        </div>
+        <div class="customerContainer">
+            <div class="customerMenu">
+                <div class="search">
+                    <div class="selectFilter">
+                        <div class="selectHead" @click="codeList = !codeList">
+                            <span class="titleTop">{{getDate}}</span>
+                            <i class="icon iconfont icon--xialajiantou"></i>
+                        </div>
+                        <ul class="showTitle" v-show="codeList">
+                            <li v-for="item in options" :key="item.index" @click="getNewAdds(item.label)">
+                                {{item.label}}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="searchContainer">
+                        <input type="text" placeholder="请输入企业编码或名称">
+                        <i class="icon iconfont icon-search"></i>
+                    </div>
+                    <ul class="customerBtn">
+                        <li>新增</li>
+                        <li>导入</li>
+                        <!--  <li><a href="javascript:;">采集</a></li>-->
+                        <li @click="customerMore = !customerMore">
+                            更多
+                            <i class="icon iconfont icon--xialajiantou"></i>
+                            <dl v-show="customerMore" class="customerBatch">
+                                <dt>批量删除</dt>
+                                <dt>批量启用</dt>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <div class="customerTable">
+                    <table class="layui-hide" id="customerList" lay-filter="demo"></table>
+                </div>
+            </div>
+            <div class="customerMenu">
+                <div class="search">
+                    <div class="selectFilter">
+                        <div class="selectHead" @click="codeList = !codeList">
+                            <span class="titleTop">{{getDate}}</span>
+                            <i class="icon iconfont icon--xialajiantou"></i>
+                        </div>
+                        <ul class="showTitle" v-show="codeList">
+                            <li v-for="item in options" :key="item.index" @click="getNewAdds(item.label)">
+                                {{item.label}}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="searchContainer">
+                        <input type="text" placeholder="请输入企业编码或名称">
+                        <i class="icon iconfont icon-search"></i>
+                    </div>
+                    <ul class="customerBtn">
+                        <li>
+                            批量启用
+                        </li>
+                    </ul>
+                </div>
+                <div class="customerTable">
+                    <table class="layui-table" id="customer" lay-filter="demo"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--客户列表--停用列表的操作-->
+<script type="text/html" id="customerDemoList">
+    <a class="layui-btn borderBlure layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn borderBlure layui-btn-xs" lay-event="del">删除</a>
+    <a class="layui-btn borderBlure layui-btn-xs" lay-event="stop">停用</a>
+</script>
+<script type="text/html" id="customerDemo">
+    <a class="layui-btn borderBlure layui-btn-xs" lay-event="start">启用</a>
+    <a class="layui-btn borderBlure layui-btn-xs" lay-event="search">查看</a>
+    <a class="layui-btn borderBlure layui-btn-xs" lay-event="del">删除</a>
+    <a class="layui-btn borderBlure layui-btn-xs" lay-event="enter">进入账簿</a>
+</script>
+<!--<script src="../common/js/vue.min.js"></script>-->
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
+<!--<script src="../common/js/jquery-2.2.4.js"></script>-->
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="../common/layui/layui.js" charset="utf-8"></script>
+<script>
+    new Vue({
+        el: "#app",
+        data() {
+            return {
+                getDate: '企业编码或名称',
+                codeList: false,
+                customerMore: false,
+                options: [{
+                    value: '1',
+                    label: '企业编码或名称'
+                }, {
+                    value: '2',
+                    label: '财务进度'
+                }, {
+                    value: '3',
+                    label: '报税进度'
+                }]
+            }
+        },
+        methods: {
+            getNewAdds(value) {
+                this.codeList = false
+                this.getDate = value
+            }
+        }
+    })
+</script>
+<script src="./js/navBar.js"></script>
+<script src="./js/customerTable.js"></script>
+<script>
+    var index = 0;
+    $(".customerMenu").hide();
+    $(".customerMenu").eq(index).show();
+    $(".list li").click(function(){
+         index = $(this).index();
+        $(".list li").removeClass("listActive");
+        $(this).addClass('listActive').siblings().removeClass('listActive');
+        $(".customerMenu").hide();
+        $(".customerMenu").eq(index).show();
+    })
+</script>
+</body>
+</html>

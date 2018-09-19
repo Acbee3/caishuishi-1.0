@@ -1,0 +1,52 @@
+@charset"utf-8";
+.account{
+    border:1px solid #ccc;
+    padding:15px;
+}
+.accountSearch{
+    width:300px;
+    height:36px;
+    border: 1px solid #aeaeae;
+    position:relative;
+}
+.accountSearch input{
+    width:260px;
+    height:32px;
+    font-size:14px;
+    border:none;
+    text-indent:8px;
+}
+.accountSearch .icon-search{
+    position:absolute;
+    display:inline-block;
+    width:30px;
+    height:36px;
+    line-height:36px;
+    cursor:pointer;
+    right:0;
+    top:0;
+    font-size:26px;
+    color:#333;
+}
+.borderBlure{
+    border: none;
+    background-color: inherit;
+    color:#568bfb;
+    display:inline-block;
+    padding:0 8px;
+    font-size:20px;
+    cursor:pointer;
+}
+.borderBlure:hover{
+    color:#568bfb;
+    background-color: inherit;
+}
+#del{
+    color:#ed6d6d;
+}
+.orangeBtn{
+    background:#ec7638;
+}
+.btnBackground{
+    background:red;
+}

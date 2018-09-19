@@ -1,0 +1,824 @@
+html, body {
+    height: 100%;
+}
+
+input {
+    border: none;
+    padding: 0;
+    margin: 0
+}
+
+.tr {
+    text-align: right;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tc {
+    text-align: center;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.zjtx {
+    height: 100%;
+    padding: 10px 0;
+    min-width: 1400px;
+}
+
+/*标签页*/
+.tab {
+    height: 34px;
+    margin-left: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab .tabTitle li {
+    width: 89px;
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+
+.tab .tabTitle li:first-child {
+    border-left: 1px solid #ccc;
+}
+
+.tab .tabTitle li:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.tab .tabTitle .active {
+    background-color: #cecece;
+    color: #3d3d3d;
+}
+
+.tabContent .tabItem {
+    height: 100%;
+    position: relative;
+}
+
+.tabContent .tabItem.active {
+    display: block;
+}
+
+/*凭证号*/
+.pZnumber {
+    height: 34px;
+    line-height: 34px;
+    position: absolute;
+    top: -46px;
+    right: 5px;
+}
+
+/*标签页内容*/
+.tabContent {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 86%;
+}
+
+/*更多*/
+.moreOperations {
+    position: relative;
+    float: right;
+    margin-top: 5px;
+}
+
+.moreOperations .more {
+    margin-left: 20px;
+    background-color: #fff;
+    border: 1px solid #cbcbcb;
+    width: 104px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #3d3d3d;
+    border-radius: 4px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.moreOperations .more::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid #3d3d3d;
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    position: absolute;
+    top: 12px;
+    right: 14px;
+}
+.zjtx .layui-layer-btn {
+    padding-top: 0!important;
+    padding-right: 140px;
+}
+
+.zjtx .layui-layer-btn a {
+    margin: 0 10px;
+    border-radius: 4px;
+}
+
+.zjtx .layui-layer-btn a:first-child {
+    background-color: #f97d3c;
+    border: none;
+}
+
+.zjtx .layui-layer-btn a:last-child {
+    border-color: #ffa5a5;
+    color: #ff5757;
+}
+
+.moreOperations ul {
+    width: 104px;
+    position: absolute;
+    background-color: #fff;
+    top: 30px;
+    left: 20px;
+    border: 1px solid #ccc;
+    z-index: 100;
+}
+
+.moreOperations ul li {
+    height: 25px;
+    padding: 2px 10px;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: default;
+}
+
+.moreOperations ul li:hover {
+    background-color: #eee;
+}
+
+.zjtx .tabContent .layui-input {
+    height: 30px;
+    border-radius: 4px;
+}
+
+/*资产类别样式*/
+.listTop {
+    /* overflow: hidden; */
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.zclb {
+    margin-right: 10px;
+    float: left;
+    height: 40px;
+    width: 330px;
+}
+
+.zclb .layui-form {
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 330px;
+}
+
+.zclb .layui-form-item {
+    margin: 0;
+}
+
+.zclb .layui-form-item span {
+    float: left;
+    margin-top: 2px;
+    margin-right: 4px;
+}
+
+.zclb .layui-form-select {
+    float: left;
+    width: 260px;
+}
+
+.zclb .layui-select-title {
+    margin-top: 7px;
+}
+
+.zclb .layui-form-select dl dd:hover {
+    background: #eee;
+    height: 26px;
+    line-height: 26px;
+}
+
+.zclb .layui-form-select dl dd {
+    line-height: 26px;
+    font-size: 12px;
+}
+
+.layui-form-select dl dd.layui-this {
+    background-color: #fff;
+    color: #f97d3c;
+}
+
+.zclb select {
+    width: 122px;
+    overflow: hidden;
+}
+
+.wxtip {
+    display: inline-block;
+}
+
+.wxtip span:first-child {
+    color: red;
+}
+
+/* 新增组件 */
+
+.formdata select, .formdata option {
+    font-size: 12px;
+}
+
+.formdata option {
+    white-space: normal;
+}
+
+.first .formdata td {
+    display: inline-block;
+    flex: 1;
+    width: 320px;
+    height: 30px;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+
+.third .formdata label {
+    margin-left: 2px;
+}
+
+.third .formdata td {
+    display: inline-block;
+    width: 320px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.third .formdata .last td {
+    width: 570px;
+    padding-left: 24px;
+}
+
+.third .formdata .last {
+    position: relative;
+}
+
+.third .formdata .last .beizhu {
+    float: left;
+    width: 50px;
+    padding-left: 23px;
+}
+
+/*右侧按钮*/
+.right-buttons button {
+    float: left;
+    border-radius: 5px;
+    background-color: #49b18d;
+    padding: 0 12px;
+    margin-top: 5px;
+}
+
+.layui-btn-sm {
+    font-size: 14px;
+}
+
+.right-buttons {
+    float: right;
+    display: table-cell;
+    margin-right: 8px;
+}
+
+.right-buttons .fzczc {
+    background-color: #fd3336;
+}
+
+/*表格样式*/
+.tabContent .tabItem .box {
+    height: calc(100% - 36px);
+    overflow-y: scroll;
+    position: relative;
+}
+
+.dataTable {
+    /*height: 100%;*/
+    width: calc(100% - 17px);
+}
+
+.icon-bianji {
+    color: #49b18d;
+}
+
+.tableEditor {
+    color: #f97d3c;
+}
+
+.dataTable th, .total th {
+    text-align: center;
+    background-color: #cecece;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3d3d3d;
+    border: 1px dotted #adadad;
+    padding: 9px 0;
+}
+
+.dataTable td, .total td {
+    border: 1px dotted #ccc;
+    border-collapse: collapse;
+    height: 36px;
+    line-height: 17px;
+}
+
+.total {
+    position: absolute;
+    margin: 0 10px;
+    bottom: -50px;
+    left: -10px;
+    width: calc(100% - 34px);
+}
+
+/* 组件 */
+/* 导入组件 */
+.components .layui-layer-title {
+    background: #f97d3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px 4px 0 0;
+}
+
+.zjtx .layui-layer {
+    border-radius: 4px;
+}
+
+.daoruzj {
+    margin: 50px auto 0;
+    display: table;
+}
+
+.daoruzj .shanchuan {
+    overflow: hidden;
+}
+
+.daoruzj .shanchuan input {
+    margin: 0;
+    padding: 0;
+    width: 194px;
+    height: 30px;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.daoruzj .shanchuan span {
+    height: 30px;
+    width: 64px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-left: none;
+    text-align: center;
+    float: left;
+    font-size: 14px;
+}
+
+.daoruzj .shanchuan span:hover {
+    background-color: #ccc;
+    cursor: default;
+}
+
+.daoruzj .daorumuban {
+    height: 30px;
+    margin-top: 5px;
+}
+
+.daoruzj .daorumuban span {
+    font-size: 12px;
+    display: inline-block;
+}
+
+.daoruzj .daorumuban a {
+    font-size: 12px;
+    color: #d80303;
+}
+
+/* 取消折扣页面 */
+.cancelOff {
+    margin: 0 auto;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+}
+
+/* 新增组件 */
+
+.first .formdata {
+    margin-top: 16px;
+}
+
+.second .formdata tr {
+    /*padding-top: 20px;*/
+    height: 50px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.formdata .formItem1 {
+    width: 157px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.formdata .formItem2 {
+    width: 395px;
+}
+
+.formdata input {
+    margin: 0;
+    padding: 1px 5px;
+    font-size: 12px;
+}
+
+.zjtx .addNew .layui-form-select .layui-edge, .zjtx .edit .layui-form-select .layui-edge {
+    top: 12px;
+}
+
+#beizhu {
+    margin-left: 114px;
+    padding: 1px 5px;
+}
+
+.formdata .finalTerm div {
+    margin-bottom: 20px;
+}
+
+.formdata td label {
+    width: 110px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.second .formdata .middle td {
+    padding-bottom: 20px;
+}
+
+.second .formdata td label {
+    margin-left: 105px;
+}
+
+.formdata td #ruzhangDate {
+    display: inline-block;
+}
+
+.formdata td #ruzhangDate input {
+    width: 50px;
+}
+
+/* 编辑组件 */
+.components .title {
+    height: 40px;
+    margin: 0 15px;
+    border-top: 1px dashed #ccc;
+}
+
+.components h3 {
+    font-weight: 700;
+    font-size: 14px;
+    color: #203054;
+    padding-left: 10px;
+    border-left: 4px solid #f97d3c;
+    height: 20px;
+    margin-top: 10px;
+
+}
+
+.components input {
+    border: 1px solid #ccc;
+}
+
+/*.components .addNew input {*/
+/*border: 1px solid #ccc;*/
+/*}*/
+
+/* 清理组件 */
+.clean .cleanContent {
+    padding: 15px 20px;
+    margin: 0 auto;
+}
+
+.clean .cleanContent .rows {
+    margin-bottom: 15px;
+}
+
+.clean .cleanContent label {
+    margin-right: 10px;
+}
+
+.clean .cleanContent .layui-form-item {
+    margin: 0;
+    width: 266px;
+}
+
+.clean .cleanContent .layui-form-select .layui-edge {
+    margin-top: 8px;
+}
+
+.clean .cleanContent .layui-form-selected .layui-edge {
+    margin-top: 0px;
+}
+
+.clean .cleanContent .layui-form-select dl {
+    left: 69px;
+    top: 22px;
+    padding: 0;
+    min-width: 195px;
+}
+
+.clean .cleanContent .layui-form-select dl dd {
+    line-height: 27px;
+    width: 195px;
+}
+
+.clean .cleanContent .box {
+    padding: 20px 40px 0px 20px;
+}
+
+.clean .cleanContent .box p {
+    margin-bottom: 16px;
+    color: red;
+    font-size: 12px;
+}
+
+.clean .layui-select-title {
+    float: left;
+}
+
+.clean .cleanContent .layui-form-select .layui-input {
+    height: 23px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+
+.clean .cleanContent input {
+    height: 23px;
+    width: 195px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/*清理确定组件*/
+.cleanConfirm .content {
+    padding: 20px;
+    line-height: 24px;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+/*备注*/
+.beizhutextarea {
+    /*margin-left: 114px;*/
+    padding: 1px 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 480px;
+    resize: none;
+}
+
+.formdata .finalTerm div {
+    margin-bottom: 20px;
+}
+
+.formdata td #ruzhangDate {
+    display: inline-block;
+}
+
+.formdata td #ruzhangDate input {
+    width: 50px;
+}
+
+/* 编辑组件 */
+
+.top .layui-form .layui-form-select {
+    width: 157px;
+    float: right;
+    margin-right: 40px;
+}
+
+.top .layui-form .layui-form-select .layui-select-title input, .middle .layui-form .layui-form-select .layui-select-title input {
+    border: 1px solid #ccc;
+    height: 30px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.top .layui-form .layui-form-select dl {
+    top: 29px;
+}
+
+.top .layui-form .layui-form-select dl dd, .middle .layui-form .layui-form-select dl dd {
+    font-size: 12px;
+    white-space: normal;
+    line-height: 25px;
+}
+
+.top .layui-form .layui-form-select .layui-input, .middle .layui-form .layui-form-select .layui-input {
+    height: 22px;
+}
+
+.middle .layui-form-item {
+    margin: 0;
+}
+
+.middle .layui-form .layui-form-select {
+    width: 350px;
+    float: right;
+    margin-right: 40px;
+}
+
+.middle .layui-form .layui-form-select dl {
+    top: 20px;
+    height: 200px;
+}
+
+.middle .layui-form .layui-form-select dl dd {
+    text-align: left;
+}
+
+.middle .rzkm {
+    text-align: center;
+    height: 30px;
+    width: 350px;
+    border: 1px solid #ccc;
+    position: relative;
+    line-height: 30px;
+    border-radius: 4px;
+}
+
+.middle .rzkm input {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    vertical-align: middle;
+    border: none;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+.middle .rzkm span {
+    display: inline-block;
+    width: 17px;
+    height: 29px;
+    line-height: 30px;
+    /*border-left: 1px solid #ccc;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+}
+
+.middle .rzkm span i {
+    color: #d7d8d7;
+    padding: 0;
+    font-size: 12px;
+}
+
+/*.middle .rzkm span:hover {*/
+    /*background-color: #bdbdbd;*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*.middle .rzkm span:hover i {*/
+    /*color: #fff;*/
+/*}*/
+
+.middle .rzkm .items {
+    position: absolute;
+    top: 28px;
+    left: -1px;
+    width: 350px;
+    height: 170px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 12px;
+    z-index: 11;
+}
+
+.middle .rzkm .items li {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 2px;
+    cursor: default;
+}
+
+.middle .rzkm .items li.active {
+    background-color: #fff;
+    color: #f97d3c;
+}
+
+.middle .rzkm .items li:hover {
+    background-color: #f0f0f0;
+}
+
+/*暂停折旧组件*/
+.zantingzhejiu .content {
+    padding: 15px 20px;
+}
+
+.zantingzhejiu .content input {
+    height: 25px;
+    width: 188px;
+}
+
+.zantingzhejiu .content p {
+    margin-bottom: 10px;
+}
+
+.zantingzhejiu .content .rows {
+    margin-bottom: 10px;
+}
+
+/*字体图标*/
+.iconfont {
+    font-size: 18px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.icon-weibiaoti- {
+    font-weight: 700;
+    color: #ed833f;
+}
+
+.icon-shanchu {
+    color: #ff5757;
+}
+
+.zjtx .layui-form-select .layui-edge {
+    margin-top: 0px;
+}
+
+.zjtx .layui-form-selected .layui-edge {
+    margin-top: -6px;
+}
+
+.zjtx .layui-form-select dl {
+    top: 36px;
+}
+
+.layui-layer-title {
+    background-color: #f97d3c!important;
+    color: #fff!important;
+    border-radius: 4px!important;
+}
+
+.layui-layer {
+    border-radius: 4px!important;
+}
+
+.layui-layer-btn a {
+    border-radius: 4px!important;
+    margin: 5px 10px 0!important;
+}
+
+.layui-layer-dialog {
+    border-radius: 4px!important;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+    background-color: #f97d3c!important;
+    border: none;
+}
+
+.layui-layer-btn .layui-layer-btn1 {
+    border: 1px solid #ffa5a5;
+    color: #ff5757;
+}
+
+.layui-layer-setwin .layui-layer-close1 {
+    background-position: -87px -39px!important;
+}

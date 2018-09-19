@@ -1,0 +1,682 @@
+@charset"utf-8";
+/*---------此css用的的页面是进项的新增发票进项编辑页面-*/
+.center{
+    text-align: center;
+}
+/*----must----伪类---*/
+.must:before{
+    content: '必须';
+    width: 32px;
+    height: 15px;
+    border-radius: 10px;
+    line-height: 15px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: #f0534f;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 2px;
+}
+/*--addline---*/
+.addLine{
+    padding-top: 4px;
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.addLine .icon{
+    font-size: 14px;
+    display: block;
+    height: 16px;
+    color: #f97d3c;
+}
+.oparate{
+    display:none;
+}
+/*---deleLine----*/
+.deleLine{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+.deleLine .iconD{
+    font-size: 14px;
+    color: #ff5757;
+    height: 16px;
+}
+/*---el-picker-panel*/
+.el-picker-panel{
+    width: 180px
+}
+/*---.invoiceWrapper----*/
+.invoiceWrapper{
+    width: 1200px;
+    margin: 100px 0 0 30px;
+}
+/*---.invoice----*/
+.invoice{
+    box-shadow: 0 0 3px 3px #ccc;
+    box-sizing: border-box;
+    padding: 38px 49px 50px 14px;
+    position: relative;
+}
+.invoice .invoiceTitle{
+    text-align: center;
+    position: relative;
+    height: 40px;
+}
+.invoice .invoiceTitle .invoiceHead{
+    border-bottom: 4px double #008000;
+    display: inline-block;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+.invoice .invoiceTitle .invoiceHead .iconfont{
+    color:#008000;
+    font-size:20px;
+}
+.invoice .invoiceTitle .invoiceHead .titleTop{
+    border: none;
+    height: 50px;
+    font-size: 26px;
+    color: #008000;
+}
+/*-----.showTitle----*/
+.invoice .invoiceTitle .showTitle{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -100px;
+    width: 250px;
+    height: 180px;
+    overflow-y: scroll;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 9;
+}
+.invoice .invoiceTitle .showTitle li{
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: left;
+    text-indent: 4px;
+}
+.invoice .invoiceTitle .showTitle li:hover{
+    background: #eee;
+    cursor: pointer;
+}
+/*---invoiceInput---*/
+.invoice .invoiceInput{
+    position: absolute;
+    left: 37px;
+    top: 40px;
+    z-index: 4;
+}
+.invoice .invoiceInput .invoiceCode{
+    margin-bottom: 12px;
+    font-size:0;
+}
+.invoice .invoiceInput .invoiceCode label{
+    font-size: 14px;
+    color: #4E5465;
+    margin-right:10px;
+    font-weight: 400;
+}
+.invoiceInput .invoiceCode:hover{
+    text-decoration: inherit;
+}
+.invoice .invoiceInput .invoiceCode .code{
+    border: 1px solid #cccccc;
+    width: 150px;
+    height: 30px;
+    border-radius:4px;
+    text-indent: 6px;
+    font-size:14px;
+}
+/*---.Radio---*/
+.invoice .Radio{
+    z-index: 3;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+}
+.invoice .Radio .invoiceRadio{
+    text-align: center;
+}
+.invoice .Radio .invoiceDate{
+    box-sizing:border-box;
+    position: absolute;
+    right: 26px;
+    top: 10px;
+    height:30px;
+    font-size:0;
+}
+.invoice .Radio .invoiceDate label{
+    font-size: 14px;
+    margin-right: 10px;
+    vertical-align: top;
+    line-height:30px;
+}
+.invoice .Radio .invoiceDate .calendar{
+    display:inline-block;
+    position:relative;
+    width:150px;
+    height:30px;
+    line-height:30px;
+    border-radius:4px;
+    vertical-align: top;
+    padding-left:6px;
+    border:1px solid #ccc;
+    cursor:pointer;
+}
+.Radio .invoiceDate .calendar #date{
+    width:100px;
+    height:28px;
+    border:none;
+    vertical-align: top;
+    font-size:14px;
+}
+.Radio .invoiceDate .calendar .icon{
+    font-size:20px;
+    color:#f97d3c;
+    position:absolute;
+    right:2px;
+    top:0;
+}
+/*---.invoiceTable----*/
+.invoice .invoiceTable{
+    width: 100%;
+    box-sizing: border-box;
+}
+.invoice .invoiceTable .topTable{
+    width: 100%;
+    table-layout: fixed;
+    font-size: 14px;
+    color: #008000;
+    z-index:2;
+}
+.invoice .invoiceTable .topTable tr{
+    height: 40px;
+}
+.invoice .invoiceTable .topTable tbody td,.invoiceTable2 td,.invoiceTable2 th{
+    position:relative;
+    border-width: 0 1px 1px 0;
+    border-color:#008000;
+    border-style:solid;
+}
+.invoice .invoiceTable .topTable tbody .border-left{
+    border-left:1px solid #008000;
+}
+.invoice .invoiceTable .topTable tbody .border-top{
+    border-top:1px solid #008000;
+}
+.invoice .invoiceTable .topTable tbody .border-right{
+    border:none;
+}
+.invoiceTable2 .border-bottom{
+    border:none;
+}
+.invoiceTable2 .border-bottomLeft{
+    border-bottom:none;
+}
+.invoice .invoiceTable .topTable .textTitle{
+    display: inline-block;
+    width: 100%;
+    height: 39px;
+    text-indent: 6px;
+    border:none;
+}
+.invoice .invoiceTable .topTable .textT{
+    width: 90%;
+    text-indent: 6px;
+    height: 60px;
+    border: none;
+}
+.invoice .invoiceTable .topTable textarea:focus{
+    outline: none;
+}
+.invoice .invoiceTable .topTable input:focus{
+    outline: none;
+}
+/*----.invoiceTable2-----*/
+.invoice .invoiceTable .invoiceTable2{
+    width: 100%;
+    table-layout: fixed;
+    font-size: 14px;
+    color: #008000;
+}
+.invoice .invoiceTable .invoiceTable2 tr{
+    height: 40px;
+}
+.invoice .invoiceTable .invoiceTable2 tr td{
+    position:relative;
+}
+.invoice .invoiceTable .invoiceTable2 tr:hover .oparate{
+    display:block;
+}
+.invoiceTable .invoiceTable2 thead th{
+    color:#008000;
+}
+.invoice .invoiceTable .invoiceTable2 .textD{
+    display: inline-block;
+    width: 258px;
+    height: 38px;
+}
+.invoiceTable .invoiceTable2 .textD .textbox{
+    width: 100%;
+    height: 100%;
+    border:none;
+}
+.invoiceTable .invoiceTable2 .text-input{
+    border: none;
+    width: 100%;
+    height:39px;
+    text-indent: 2px;
+    color:blue;
+}
+.invoiceTable .invoiceTable2 input:focus{
+    outline: none;
+}
+/*----.numPage----*/
+.invoice .numPage{
+    margin: 20px 0 0 26px;
+    font-size: 14px;
+}
+.invoice .numPage input{
+    width: 34px;
+    height: 22px;
+    border: 1px solid #ccc;
+}
+.invoice .numPage input:focus{
+    outline: none;
+}
+/*----.keep---*/
+.keep{
+    text-align: right;
+    margin-top: 20px;
+    font-size:0;
+}
+.keep> a{
+    display: inline-block;
+    color: #ffffff;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-right:20px;
+}
+.keep> a.keepBtn{
+    background: #24b482;
+}
+.keep> a.keepBtn1{
+    background:#f97d3c;
+    color:#fff;
+    border:1px solid #f97d3c;
+    border-radius:4px;
+}
+.keep .importBtn1{
+    display:inline-block;
+    vertical-align: top;
+    position:relative;
+    background: #38c4d1;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.keep .importBtn1>a{
+    color:#fff;
+}
+.keep a.delBtn{
+    background:#f66;
+}
+.invoice-wx{
+    position:absolute;
+    left:0;
+    top:28px;
+    width:80px;
+    padding:4px 0;
+    border:1px solid #ccc;
+    background: #eee;
+    /*display:none;*/
+}
+.invoice-wx>li{
+    height:26px;
+    line-height:26px;
+}
+.invoice-wx>li:hover{
+    background:#eee;
+}
+.invoice-wx>li a{
+    color:#000;
+    font-size:12px;
+    display:inline-block;
+    width:100%;
+}
+/*.keep .importBtn1:hover .invoice-wx{
+    display:block;
+}*/
+/*--------select-------*/
+.invoice-menu{
+    display:none;
+}
+.select_box .selectText{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    font-size:14px;
+    text-align:left;
+    padding:0 10px;
+    color:blue;
+    border:none;
+}
+.select_box ul {
+    width:100%;
+    position:absolute;
+    left:0;
+    top:41px;
+    border:1px solid #ccc;
+    max-height:200px;
+    overflow-y: scroll;
+    background:#fff;
+    z-index:99999;
+
+}
+.select_box ul em{
+    font-style: normal;
+    font-size: 12px;
+}
+.select_box ul li {
+    display:block;
+    height:24px;
+    text-align:left;
+    font-size:14px;
+    color:#333;
+    overflow:hidden;
+    line-height:24px;
+    padding-left:5px;
+    width:100%;
+    cursor:pointer;
+    position:relative;
+}
+.select_box ul li span{
+    position:absolute;
+    right:6px;
+}
+.select_box ul li:hover{
+    background: #eee;
+}
+/*----invoiceAdd--新增暂不需要---*/
+.invoiceAdd{
+    width:410px;
+    height:26px;
+    line-height:26px;
+    background:#ccc;
+    position:absolute;
+    top:40px;
+    left:0;
+    z-index:9;
+    text-align:left;
+}
+.invoiceAdd>div{
+    width:140px;
+    padding-left:6px;
+    cursor:pointer;
+}
+/*-----销项发票----------*/
+.invoice .invoiceTable .invoiceTable2 .textSm{
+    width:218px;
+    height:41px;
+}
+.invoiceTable .invoiceTable2 .textSm>input{
+    width:100%;
+    height:100%;
+    border:none;
+}
+.smWrapper{
+    width:218px;
+    position:absolute;
+    left:0;
+    top:42px;
+    height:220px;
+    border:1px solid #ccc;
+    z-index:999;
+}
+.smTab{
+    width:100%;
+    height:40px;
+    background:#ccc;
+}
+.smTab>li{
+    width:60px;
+    height:30px;
+    line-height:30px;
+    border-radius:4px;
+    font-size:14px;
+    color:#fff;
+    background:#25a1f8;
+    float:left;
+    text-align:center;
+    margin:5px 0 0 30px;
+    cursor:pointer;
+}
+.smTab>li.activeSm{
+    background:#f97d3c;
+    color:#fff;
+}
+.kpselect_box{
+    position:relative;
+    padding-top:10px;
+    height:190px;
+    background: #fff;
+}
+.kpselect_ul{
+    position:absolute;
+    left:0;
+    top:45px;
+    width:218px;
+    height:160px;
+    overflow-y:scroll;
+    background:#fff;
+    border:1px solid #ccc;
+}
+.kpselect_ul li{
+    line-height:22px;
+    font-size:12px;
+    color:#333;
+    cursor:pointer;
+}
+.kpselect_ul li:hover{
+    background:#feba56;
+}
+.kpSelect{
+    width:90%;
+    height:26px;
+    margin:0 auto;
+    border:1px solid #ccc;
+    border-radius:4px;
+    position:relative;
+    padding-top:10px;
+}
+.kpSelect>input{
+    width:80%;
+    height:24px;
+    border:none;
+    border-radius: 4px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.kpSelect>i{
+    display:inline-block;
+    position:absolute;
+    right:0;
+    top:0;
+    width:24px;
+    height:24px;
+    font-size: 12px;
+    line-height:24px;
+    text-align:center;
+    color:#ccc;
+    cursor:pointer;
+    /*border-left:1px solid #ccc;*/
+}
+.kpSelect>i:hover{
+    background:#eee;
+}
+.wxInfo{
+    width:100%;
+    height:42px;
+    border:none;
+}
+.wb-content{
+    padding-left:6px;
+    text-align:left;
+    position:absolute;
+    left:0;
+    bottom:10px;
+}
+.wb-content .tips{
+    color:#f66;
+}
+.wb-content>i{
+    cursor:pointer;
+}
+.bzType{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    border: 2px solid rgb(187, 187, 187);
+    box-shadow: rgb(187, 187, 187) 0 0 6px;
+    background: #fff;
+    z-index: 99999;
+}
+.bzType .text{
+    background:#ecac33;
+    height:26px;
+    line-height:26px;
+    color:#333;
+}
+.selectBz{
+    min-height:60px;
+    padding:0 10px;
+    text-align: left;
+}
+.selectBz label{
+
+}
+.bz-bottom{
+    padding:0 10px;
+    width:100%;
+    height:34px;
+}
+.bz-bottom .choose-type{
+    float:left;
+    cursor:pointer;
+}
+.bz-bottom .choose-btn{
+    float:right;
+}
+.bz-bottom .choose-btn a{
+    display:inline-block;
+    width:60px;
+    height:30px;
+    border-radius:4px;
+    text-align: center;
+    line-height:30px;
+    color:#fff;
+    background:#f66;
+}
+/*--------外销形式发票的新增币种-------*/
+#newAddBz{
+    padding-top:16px;
+}
+.item-bz{
+    margin-bottom:14px;
+}
+.item-bz .bz-code{
+    display:inline-block;
+    vertical-align: top;
+    width:90px;
+    height:30px;
+    text-align: right;
+    margin-right: 10px;
+}
+.item-bz .codeMenu{
+    display:inline-block;
+    vertical-align: top;
+    border:1px solid #ccc;
+    width:180px;
+    height:30px;
+    font-size:0;
+    border-radius:4px;
+    position:relative;
+}
+.item-bz .selectBz-type .textWrapper{
+    width:156px;
+    height:26px;
+    font-size:14px;
+    border:none;
+    text-indent: 4px;
+}
+.item-bz .selectBz-type .icon-xialazhishijiantou{
+    display:inline-block;
+    vertical-align: top;
+    width:22px;
+    height:28px;
+    text-align: center;
+    line-height:28px;
+    border-left:1px solid #ccc;
+    font-size:18px;
+    cursor:pointer;
+}
+.item-bz .selectBz-type .icon-xialazhishijiantou:hover{
+    background:#eee;
+}
+.showCode{
+    position:absolute;
+    width:180px;
+    border:1px solid #ccc;
+    top:34px;
+    right:0;
+    max-height:200px ;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    z-index: 88;
+    background:#fff;
+}
+.showCode li{
+    line-height:22px;
+    font-size:12px;
+    color:#000;
+    cursor:pointer;
+    padding-left:4px;
+}
+.showCode li:hover{
+    background:#feba56;
+}
+.codeMenu>input{
+    width:178px;
+    height:26px;
+    font-size:14px;
+    border:none;
+    text-indent: 4px;
+}
+.codeMenu .readInput{
+    background:#eee;
+}
+.bz-wrapper .layui-layer-btn>a{
+    background:#568bfb;
+    color:#fff;
+}
+.bz-wrapper .layui-layer-btn>a.layui-layer-btn2{
+    background:#f66;
+}
+/*---------单位为空时弹框提示--------*/
+.unitAlert .unitTips{
+    padding:15px;
+}

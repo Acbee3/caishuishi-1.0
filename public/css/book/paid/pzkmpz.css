@@ -1,0 +1,133 @@
+@charset "utf-8";
+.pzkmpz{
+    padding:15px;
+}
+.pzkm-btn{
+    width:700px;
+    height:40px;
+}
+.pzkm-btn a{
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    padding:0 10px;
+    border-radius:4px;
+    font-size:14px;
+    color:#fff;
+    float:right;
+    background-color: #f97d3c;
+}
+
+.pzkm-btn a.autoConfig {
+    background-color: #25a1f8;
+}
+/*--------计提科目----*/
+.kmForm{
+    width:700px;
+}
+.kmMenu{
+    margin-top:10px;
+}
+.kmFy{
+    max-height:300px;
+    overflow:auto;
+}
+.kmMenu .iconfont{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    color:#ff5757;
+    position:absolute;
+    right:20px;
+    top:50%;
+    margin-top:10px;
+    cursor:pointer;
+}
+.kmMenu .text{
+    font-weight:800;
+    color:#568bfb;
+    font-size:16px;
+    margin-bottom:10px;
+}
+.jtkm{
+    font-size:0;
+    width:100%;
+    height:30px;
+    margin-bottom:8px;
+}
+.jtkm>div{
+    float:left;
+}
+.jtkm label{
+    display:inline-block;
+    width:100px;
+    height:30px;
+    line-height:30px;
+    text-align:right;
+    font-size:14px;
+    margin-right:10px;
+}
+.jtkm .km-item{
+    display:inline-block;
+    vertical-align: top;
+    width:200px;
+    height:30px;
+    font-size:14px;
+}
+.km-item .layui-select-title>input{
+    height:30px;
+}
+.km-item .layui-form-select dl{
+    width:200px;
+}
+.km-item .layui-form-select dl dd{
+    font-size: 14px;
+    white-space:normal;
+    overflow: inherit;
+    line-height:24px;
+    padding:0 4px;
+}
+.km-item .layui-form-select dl dd.layui-this{
+    background:#fff;
+    padding:0 4px;
+    line-height:20px;
+    color:#f97d3c;
+}
+
+.layui-form-select dl dd:hover {
+    background-color: #eee!important;
+}
+.kmWrapper{
+    background:#efefef;
+    padding:20px 0 10px 0;
+    position:relative;
+    margin-bottom:18px;
+}
+/*------新增按钮---------*/
+.kmAdd{
+    margin-top:15px;
+}
+.kmAdd a{
+    display:inline-block;
+    height:32px;
+    color:#fff;
+    background:#49b18d;
+    padding:0 10px;
+    line-height:32px;
+    border-radius:4px;
+}
+/*------成本费用-------*/
+.kmFy .km-item select{
+    display:inline-block;
+    width:200px;
+    height:30px;
+    border:1px solid #ccc;
+}
+
+.layui-layer-setwin .layui-layer-close1 {
+    background-position: -87px -39px!important;
+}
+
+.layui-layer-title {
+    background-color: #f97d3c!important;
+}

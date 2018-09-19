@@ -1,0 +1,105 @@
+@charset "utf-8";
+.container{
+    width: 100%;
+    min-width: 1200px;
+    padding: 0 46px;
+}
+.container .menuTop{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.container .menuTop .menuTopLeft{
+    flex: 1;
+}
+.container .menuTop .menuTopRight{
+    margin-left: 20px;
+    width: 300px;
+    height: 60px;
+    background: #eee;
+}
+/*------统计---------*/
+.statistics{
+    width: 100%;
+    height:40px;
+    line-height:40px;
+    border: 1px solid #999;
+    margin: 15px 0;
+    padding: 0 42px 0 12px;
+}
+.statistics:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.statistics .export{
+    float: left;
+    font-size: 0;
+}
+.statistics .export span{
+    font-size: 12px;
+    color:#333;
+}
+.statistics .export .exportText{
+    color: #feba56;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.statistics .date{
+    float: right;
+}
+/*---charts----*/
+.charts{
+    display:flex;
+    justify-content: space-around;
+}
+.charts>div{
+    flex:1;
+    border: 1px solid #999;
+    position: relative;
+}
+.charts>div#main2{
+    margin: 0 10px;
+}
+/*----table-----*/
+.container .menuBottom{
+    width: 100%;
+    border: 1px solid #999;
+    margin-top:10px;
+    padding:10px;
+}
+.container .menuBottom #tableWrapper{
+    width:100%;
+}
+/*----tableWrapper---*/
+.tableWrapper{
+    margin-top:16px;
+}
+.tableWrapper thead tr{
+    height:36px;
+    line-height:36px;
+    color:#fff;
+    background:#425772;
+    font-size:14px;
+}
+.tableWrapper tbody tr{
+    height:36px;
+    line-height:36px;
+    color:#333;
+    font-size:14px;
+}
+.borderBtn{
+    display:inline-block;
+    height:26px;
+    line-height:26px;
+    padding:0 8px;
+    border: 1px solid #ec833f;
+    background-color: #fff;
+    color:#ec833f;
+    border-radius:3px;
+}
+.borderBtn:hover{
+    background:#ec833f;
+    color:#fff;
+}
